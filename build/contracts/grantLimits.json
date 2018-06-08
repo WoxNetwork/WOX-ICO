@@ -1,0 +1,278 @@
+{
+  "contractName": "grantLimits",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820535f740c22ad2a193fb494c5bef909c8c557a07cdb4a25b854ee8030fbbefa840029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820535f740c22ad2a193fb494c5bef909c8c557a07cdb4a25b854ee8030fbbefa840029",
+  "sourceMap": "28:200:15:-;;;129:96;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:96:15;28:200;;;;;;",
+  "deployedSourceMap": "28:200:15:-;;;;;",
+  "source": "pragma solidity ^0.4.23;\r\n\r\ncontract grantLimits {\r\n    uint256 grantHardcapToken;\r\n    uint256 grantHardcapTokenPerEach;\r\n\r\n    constructor() public {\r\n        // grantHardcapToken\r\n        // grantHardcapTokenPerEach\r\n    }\r\n}",
+  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\crowdSale\\grantLimits.sol",
+  "ast": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/grantLimits.sol",
+    "exportedSymbols": {
+      "grantLimits": [
+        2974
+      ]
+    },
+    "id": 2975,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2965,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:15"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2974,
+        "linearizedBaseContracts": [
+          2974
+        ],
+        "name": "grantLimits",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 2967,
+            "name": "grantHardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 2974,
+            "src": "56:25:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2966,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:7:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 2969,
+            "name": "grantHardcapTokenPerEach",
+            "nodeType": "VariableDeclaration",
+            "scope": 2974,
+            "src": "88:32:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2968,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "88:7:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2972,
+              "nodeType": "Block",
+              "src": "150:75:15",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 2973,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "140:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2971,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "150:0:15"
+            },
+            "scope": 2974,
+            "src": "129:96:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2975,
+        "src": "28:200:15"
+      }
+    ],
+    "src": "0:228:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/grantLimits.sol",
+    "exportedSymbols": {
+      "grantLimits": [
+        2974
+      ]
+    },
+    "id": 2975,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2965,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:15"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2974,
+        "linearizedBaseContracts": [
+          2974
+        ],
+        "name": "grantLimits",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 2967,
+            "name": "grantHardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 2974,
+            "src": "56:25:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2966,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:7:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 2969,
+            "name": "grantHardcapTokenPerEach",
+            "nodeType": "VariableDeclaration",
+            "scope": 2974,
+            "src": "88:32:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2968,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "88:7:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2972,
+              "nodeType": "Block",
+              "src": "150:75:15",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 2973,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "140:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2971,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "150:0:15"
+            },
+            "scope": 2974,
+            "src": "129:96:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2975,
+        "src": "28:200:15"
+      }
+    ],
+    "src": "0:228:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-28T07:41:55.483Z"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "bax",
+  "version": "1.0.0",
+  "description": "BAX ERC223 Token crowdsale",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha || true;"
+  },
+  "keywords": [
+    "ERC223",
+    "ICO"
+  ],
+  "author": "hossein namazian",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.0.0",
+    "async": "^2.6.1",
+    "bootstrap": "^4.1.1",
+    "chai": "^4.1.2",
+    "ganache-cli": "^6.1.0",
+    "lerna": "^2.11.0",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.24",
+    "web3": "file:web3",
+    "webpack": "^4.10.0"
+  }
+}

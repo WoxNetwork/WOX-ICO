@@ -1,0 +1,3316 @@
+{
+  "contractName": "TierCap",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hasClosed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTokensPerETH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier4hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTier",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier3hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier1hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "preICOherdcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier2hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTierHardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052633b9aca00600a55610031622dc6c0600454610072640100000000026106e0179091906401000000009004565b600b556307270e00600c55641d1a94a200600d55641d1a94a200600e55641d1a94a200600f55641d1a94a20060105534801561006c57600080fd5b506100aa565b60008083141561008557600090506100a4565b818302905081838281151561009657fe5b041415156100a057fe5b8090505b92915050565b610744806100b96000396000f3006080604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b146100a95780633be961b5146100d857806352f20fd2146101035780635ad701c21461012e5780637480fba8146101675780639bade61214610192578063a2390d13146101bd578063ba07ac0e146101e8578063d13621e614610213578063e537697e1461023e575b600080fd5b3480156100b557600080fd5b506100be610269565b604051808215151515815260200191505060405180910390f35b3480156100e457600080fd5b506100ed610281565b6040518082815260200191505060405180910390f35b34801561010f57600080fd5b506101186103b8565b6040518082815260200191505060405180910390f35b34801561013a57600080fd5b506101436103be565b6040518082600681111561015357fe5b60ff16815260200191505060405180910390f35b34801561017357600080fd5b5061017c6103fe565b6040518082815260200191505060405180910390f35b34801561019e57600080fd5b506101a7610404565b6040518082815260200191505060405180910390f35b3480156101c957600080fd5b506101d261040a565b6040518082815260200191505060405180910390f35b3480156101f457600080fd5b506101fd610410565b6040518082815260200191505060405180910390f35b34801561021f57600080fd5b50610228610416565b6040518082815260200191505060405180910390f35b34801561024a57600080fd5b5061025361041c565b6040518082815260200191505060405180910390f35b600080544211801561027c575060015442105b905090565b600080600061028e6103be565b90506005600681111561029d57fe5b8160068111156102a957fe5b141515156102b657600080fd5b6006808111156102c257fe5b8160068111156102ce57fe5b141515156102db57600080fd5b6102e36103be565b9150600060068111156102f257fe5b8260068111156102fe57fe5b141561030e5760055492506103b3565b6001600681111561031b57fe5b82600681111561032757fe5b14156103375760065492506103b3565b6002600681111561034457fe5b82600681111561035057fe5b14156103605760075492506103b3565b6003600681111561036d57fe5b82600681111561037957fe5b14156103895760085492506103b3565b6004600681111561039657fe5b8260068111156103a257fe5b14156103b25760095492506103b3565b5b505090565b60105481565b600060036103ca61062f565b60ff168154811015156103d957fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b600f5481565b600d5481565b600c5481565b600a5481565b600e5481565b600080610427610269565b15151561043357600080fd5b600061043d6103be565b90506005600681111561044c57fe5b81600681111561045857fe5b1415151561046557600080fd5b60068081111561047157fe5b81600681111561047d57fe5b1415151561048a57600080fd5b6104926103be565b9150600060068111156104a157fe5b8260068111156104ad57fe5b14156104bd57600c54925061062a565b600160068111156104ca57fe5b8260068111156104d657fe5b14156104fa576104f3600c54600d546106c490919063ffffffff16565b925061062a565b6002600681111561050757fe5b82600681111561051357fe5b141561054b57610544600c54610536600d54600e546106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b6003600681111561055857fe5b82600681111561056457fe5b14156105b0576105a9600c5461059b600d5461058d600e54600f546106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b600460068111156105bd57fe5b8260068111156105c957fe5b141561062957610622600c54610614600d54610606600e546105f8600f546010546106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b5b505090565b60008061063a610269565b15151561064657600080fd5b600090505b6003805490508160ff1610156106bf57600260008260ff1660ff1681526020019081526020016000206000015442101580156106a55750600260006001830160ff1660ff1681526020019081526020016000206000015442105b156106b2578091506106c0565b808060010191505061064b565b5b5090565b600081830190508281101515156106d757fe5b80905092915050565b6000808314156106f35760009050610712565b818302905081838281151561070457fe5b0414151561070e57fe5b8090505b929150505600a165627a7a72305820e93ee667740c244b29f7c38ba7ed41878c4ad35abe2a146daa2235f4e27450430029",
+  "deployedBytecode": "0x6080604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b146100a95780633be961b5146100d857806352f20fd2146101035780635ad701c21461012e5780637480fba8146101675780639bade61214610192578063a2390d13146101bd578063ba07ac0e146101e8578063d13621e614610213578063e537697e1461023e575b600080fd5b3480156100b557600080fd5b506100be610269565b604051808215151515815260200191505060405180910390f35b3480156100e457600080fd5b506100ed610281565b6040518082815260200191505060405180910390f35b34801561010f57600080fd5b506101186103b8565b6040518082815260200191505060405180910390f35b34801561013a57600080fd5b506101436103be565b6040518082600681111561015357fe5b60ff16815260200191505060405180910390f35b34801561017357600080fd5b5061017c6103fe565b6040518082815260200191505060405180910390f35b34801561019e57600080fd5b506101a7610404565b6040518082815260200191505060405180910390f35b3480156101c957600080fd5b506101d261040a565b6040518082815260200191505060405180910390f35b3480156101f457600080fd5b506101fd610410565b6040518082815260200191505060405180910390f35b34801561021f57600080fd5b50610228610416565b6040518082815260200191505060405180910390f35b34801561024a57600080fd5b5061025361041c565b6040518082815260200191505060405180910390f35b600080544211801561027c575060015442105b905090565b600080600061028e6103be565b90506005600681111561029d57fe5b8160068111156102a957fe5b141515156102b657600080fd5b6006808111156102c257fe5b8160068111156102ce57fe5b141515156102db57600080fd5b6102e36103be565b9150600060068111156102f257fe5b8260068111156102fe57fe5b141561030e5760055492506103b3565b6001600681111561031b57fe5b82600681111561032757fe5b14156103375760065492506103b3565b6002600681111561034457fe5b82600681111561035057fe5b14156103605760075492506103b3565b6003600681111561036d57fe5b82600681111561037957fe5b14156103895760085492506103b3565b6004600681111561039657fe5b8260068111156103a257fe5b14156103b25760095492506103b3565b5b505090565b60105481565b600060036103ca61062f565b60ff168154811015156103d957fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b600f5481565b600d5481565b600c5481565b600a5481565b600e5481565b600080610427610269565b15151561043357600080fd5b600061043d6103be565b90506005600681111561044c57fe5b81600681111561045857fe5b1415151561046557600080fd5b60068081111561047157fe5b81600681111561047d57fe5b1415151561048a57600080fd5b6104926103be565b9150600060068111156104a157fe5b8260068111156104ad57fe5b14156104bd57600c54925061062a565b600160068111156104ca57fe5b8260068111156104d657fe5b14156104fa576104f3600c54600d546106c490919063ffffffff16565b925061062a565b6002600681111561050757fe5b82600681111561051357fe5b141561054b57610544600c54610536600d54600e546106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b6003600681111561055857fe5b82600681111561056457fe5b14156105b0576105a9600c5461059b600d5461058d600e54600f546106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b600460068111156105bd57fe5b8260068111156105c957fe5b141561062957610622600c54610614600d54610606600e546105f8600f546010546106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b6106c490919063ffffffff16565b925061062a565b5b505090565b60008061063a610269565b15151561064657600080fd5b600090505b6003805490508160ff1610156106bf57600260008260ff1660ff1681526020019081526020016000206000015442101580156106a55750600260006001830160ff1660ff1681526020019081526020016000206000015442105b156106b2578091506106c0565b808060010191505061064b565b5b5090565b600081830190508281101515156106d757fe5b80905092915050565b6000808314156106f35760009050610712565b818302905081838281151561070457fe5b0414151561070e57fe5b8090505b929150505600a165627a7a72305820e93ee667740c244b29f7c38ba7ed41878c4ad35abe2a146daa2235f4e27450430029",
+  "sourceMap": "59:1258:12:-;;;128:3;98:33;;168:16;180:3;168:7;;:11;;;;;;:16;;;;;:::i;:::-;138:46;;227:5;191:41;;277:5;239:43;;327:5;289:43;;377:5;339:43;;427:5;389:43;;59:1258;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:1258:12;;;203:167:1;261:9;287:1;282;:6;278:35;;;305:1;298:8;;;;278:35;326:1;322;:5;318:9;;349:1;344;340;:5;;;;;;;;:10;333:18;;;;;;364:1;357:8;;203:167;;;;;:::o;59:1258:12:-;;;;;;;",
+  "deployedSourceMap": "59:1258:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:112:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;761:112:14;;;;;;;;;;;;;;;;;;;;;;;;;;;293:600:13;;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:600:13;;;;;;;;;;;;;;;;;;;;;;;389:43:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;389:43:12;;;;;;;;;;;;;;;;;;;;;;;656:97:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;656:97:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;339:43:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;339:43:12;;;;;;;;;;;;;;;;;;;;;;;239;;8:9:-1;5:2;;;30:1;27;20:12;5:2;239:43:12;;;;;;;;;;;;;;;;;;;;;;;191:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:41:12;;;;;;;;;;;;;;;;;;;;;;;98:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:33:12;;;;;;;;;;;;;;;;;;;;;;;289:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;289:43:12;;;;;;;;;;;;;;;;;;;;;;;441:871;;8:9:-1;5:2;;;30:1;27;20:12;5:2;441:871:12;;;;;;;;;;;;;;;;;;;;;;;761:112:14;803:4;833:11;;827:3;:17;:37;;;;;854:10;;848:3;:16;827:37;819:46;;761:112;:::o;293:600:13:-;381:7;407:12;939;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;422:9;:7;:9::i;:::-;407:24;;455:13;446:22;;;;;;;;:5;:22;;;;;;;;;442:444;;;492:18;;485:25;;;;442:444;541:16;532:25;;;;;;;;:5;:25;;;;;;;;;528:358;;;581:20;;574:27;;;;528:358;632:16;623:25;;;;;;;;:5;:25;;;;;;;;;619:267;;;672:20;;665:27;;;;619:267;723:16;714:25;;;;;;;;:5;:25;;;;;;;;;710:176;;;763:20;;756:27;;;;710:176;814:16;805:25;;;;;;;;:5;:25;;;;;;;;;801:85;;;854:20;;847:27;;;;801:85;1067:1;293:600;;;:::o;389:43:12:-;;;;:::o;656:97:14:-;696:6;722;729:15;:13;:15::i;:::-;722:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;715:30;;656:97;:::o;339:43:12:-;;;;:::o;239:::-;;;;:::o;191:41::-;;;;:::o;98:33::-;;;;:::o;289:43::-;;;;:::o;441:871::-;554:7;574:12;930:11:14;:9;:11::i;:::-;929:12;921:21;;;;;;;;939:12:13;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;589:9:12;:7;:9::i;:::-;574:24;;622:13;613:22;;;;;;;;:5;:22;;;;;;;;;609:696;;;659:18;;652:25;;;;609:696;708:16;699:25;;;;;;;;:5;:25;;;;;;;;;695:610;;;748:44;773:18;;748:20;;:24;;:44;;;;:::i;:::-;741:51;;;;695:610;823:16;814:25;;;;;;;;:5;:25;;;;;;;;;810:495;;;863:70;914:18;;863:46;888:20;;863;;:24;;:46;;;;:::i;:::-;:50;;:70;;;;:::i;:::-;856:77;;;;810:495;964:16;955:25;;;;;;;;:5;:25;;;;;;;;;951:354;;;1004:96;1081:18;;1004:72;1055:20;;1004:46;1029:20;;1004;;:24;;:46;;;;:::i;:::-;:50;;:72;;;;:::i;:::-;:76;;:96;;;;:::i;:::-;997:103;;;;951:354;1131:16;1122:25;;;;;;;;:5;:25;;;;;;;;;1118:187;;;1171:122;1274:18;;1171:98;1248:20;;1171:72;1222:20;;1171:46;1196:20;;1171;;:24;;:46;;;;:::i;:::-;:50;;:72;;;;:::i;:::-;:76;;:98;;;;:::i;:::-;:102;;:122;;;;:::i;:::-;1164:129;;;;1118:187;1067:1:13;953::14;441:871:12;;:::o;393:255:14:-;459:5;482:7;930:11;:9;:11::i;:::-;929:12;921:21;;;;;;;;492:1;482:11;;477:164;499:6;:13;;;;495:1;:17;;;477:164;;;545:5;:8;551:1;545:8;;;;;;;;;;;;;;;:14;;;538:3;:21;;:47;;;;;569:5;:10;577:1;575;:3;569:10;;;;;;;;;;;;;;;:16;;;563:3;:22;538:47;534:96;;;613:1;606:8;;;;534:96;514:3;;;;;;;477:164;;;953:1;393:255;;:::o;1008:123:1:-;1066:9;1091:1;1087;:5;1083:9;;1110:1;1105;:6;;1098:14;;;;;;1125:1;1118:8;;1008:123;;;;:::o;203:167::-;261:9;287:1;282;:6;278:35;;;305:1;298:8;;;;278:35;326:1;322;:5;318:9;;349:1;344;340;:5;;;;;;;;:10;333:18;;;;;;364:1;357:8;;203:167;;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./TierPricing.sol\";\r\n\r\ncontract TierCap is TierPricing {\r\n    uint256 public hardcapToken = 1e9;\r\n    uint256 internal softcapEth = ETH_USD.mul(3e6);\r\n    uint256 public preICOherdcapToken = 120e6;\r\n    uint256 public ICOTier1hardcapToken = 125e9;\r\n    uint256 public ICOTier2hardcapToken = 125e9;\r\n    uint256 public ICOTier3hardcapToken = 125e9;\r\n    uint256 public ICOTier4hardcapToken = 125e9;\r\n\r\n    function getTierHardcapToken() \r\n    public \r\n    view\r\n    onlyWhieNotClosed\r\n    purchaseAllowed\r\n    returns (uint256) {\r\n        Rounds round = getTier();\r\n        if (round == Rounds.preICO) {\r\n            return preICOherdcapToken;\r\n        } else if (round == Rounds.ICORound1) {\r\n            return ICOTier1hardcapToken.add(preICOherdcapToken);\r\n        } else if (round == Rounds.ICORound2) {\r\n            return ICOTier2hardcapToken.add(ICOTier1hardcapToken).add(preICOherdcapToken);\r\n        } else if (round == Rounds.ICORound3) {\r\n            return ICOTier3hardcapToken.add(ICOTier2hardcapToken).add(ICOTier1hardcapToken).add(preICOherdcapToken);\r\n        } else if (round == Rounds.ICORound4) {\r\n            return ICOTier4hardcapToken.add(ICOTier3hardcapToken).add(ICOTier2hardcapToken).add(ICOTier1hardcapToken).add(preICOherdcapToken);\r\n        }\r\n    }\r\n\r\n}",
+  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\crowdSale\\TierCap.sol",
+  "ast": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierCap.sol",
+    "exportedSymbols": {
+      "TierCap": [
+        1431
+      ]
+    },
+    "id": 1432,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1318,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierPricing.sol",
+        "file": "./TierPricing.sol",
+        "id": 1319,
+        "nodeType": "ImportDirective",
+        "scope": 1432,
+        "sourceUnit": 1526,
+        "src": "28:27:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1320,
+              "name": "TierPricing",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1525,
+              "src": "79:11:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TierPricing_$1525",
+                "typeString": "contract TierPricing"
+              }
+            },
+            "id": 1321,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:11:12"
+          }
+        ],
+        "contractDependencies": [
+          1525,
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1431,
+        "linearizedBaseContracts": [
+          1431,
+          1525,
+          1630
+        ],
+        "name": "TierCap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1324,
+            "name": "hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "98:33:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1322,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "316539",
+              "id": 1323,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "128:3:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000000_by_1",
+                "typeString": "int_const 1000000000"
+              },
+              "value": "1e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1330,
+            "name": "softcapEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "138:46:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1325,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "138:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "336536",
+                  "id": 1328,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "180:3:12",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_3000000_by_1",
+                    "typeString": "int_const 3000000"
+                  },
+                  "value": "3e6"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_3000000_by_1",
+                    "typeString": "int_const 3000000"
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": null,
+                  "id": 1326,
+                  "name": "ETH_USD",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1438,
+                  "src": "168:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 1327,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "memberName": "mul",
+                "nodeType": "MemberAccess",
+                "referencedDeclaration": 53,
+                "src": "168:11:12",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                }
+              },
+              "id": 1329,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": false,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "168:16:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1333,
+            "name": "preICOherdcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "191:41:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1331,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "191:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132306536",
+              "id": 1332,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "227:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_120000000_by_1",
+                "typeString": "int_const 120000000"
+              },
+              "value": "120e6"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1336,
+            "name": "ICOTier1hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "239:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1334,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "239:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1335,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "277:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1339,
+            "name": "ICOTier2hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "289:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1337,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "289:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1338,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "327:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1342,
+            "name": "ICOTier3hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "339:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1340,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "339:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1341,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "377:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1345,
+            "name": "ICOTier4hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "389:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1343,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "389:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1344,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "427:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1429,
+              "nodeType": "Block",
+              "src": "563:749:12",
+              "statements": [
+                {
+                  "assignments": [
+                    1355
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1355,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1430,
+                      "src": "574:12:12",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1354,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "574:6:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1358,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1356,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "589:7:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1357,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "589:9:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "574:24:12"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1362,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1359,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1355,
+                      "src": "613:5:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1360,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "622:6:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1361,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "622:13:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "613:22:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "id": 1369,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 1366,
+                        "name": "round",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1355,
+                        "src": "699:5:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1367,
+                          "name": "Rounds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1539,
+                          "src": "708:6:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                            "typeString": "type(enum Tierline.Rounds)"
+                          }
+                        },
+                        "id": 1368,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "ICORound1",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "708:16:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "src": "699:25:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "condition": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1379,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1376,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1355,
+                          "src": "814:5:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1377,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "823:6:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1378,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "ICORound2",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "823:16:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "814:25:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "falseBody": {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          },
+                          "id": 1392,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 1389,
+                            "name": "round",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1355,
+                            "src": "955:5:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1390,
+                              "name": "Rounds",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1539,
+                              "src": "964:6:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                "typeString": "type(enum Tierline.Rounds)"
+                              }
+                            },
+                            "id": 1391,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "ICORound3",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "964:16:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "src": "955:25:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "condition": {
+                            "argumentTypes": null,
+                            "commonType": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            },
+                            "id": 1408,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "argumentTypes": null,
+                              "id": 1405,
+                              "name": "round",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1355,
+                              "src": "1122:5:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "==",
+                            "rightExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1406,
+                                "name": "Rounds",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1539,
+                                "src": "1131:6:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                  "typeString": "type(enum Tierline.Rounds)"
+                                }
+                              },
+                              "id": 1407,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "ICORound4",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "1131:16:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "src": "1122:25:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "falseBody": null,
+                          "id": 1424,
+                          "nodeType": "IfStatement",
+                          "src": "1118:187:12",
+                          "trueBody": {
+                            "id": 1423,
+                            "nodeType": "Block",
+                            "src": "1149:156:12",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "arguments": [
+                                    {
+                                      "argumentTypes": null,
+                                      "id": 1420,
+                                      "name": "preICOherdcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1333,
+                                      "src": "1274:18:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "arguments": [
+                                        {
+                                          "argumentTypes": null,
+                                          "id": 1417,
+                                          "name": "ICOTier1hardcapToken",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 1336,
+                                          "src": "1248:20:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        }
+                                      ],
+                                      "expression": {
+                                        "argumentTypes": [
+                                          {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        ],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "arguments": [
+                                            {
+                                              "argumentTypes": null,
+                                              "id": 1414,
+                                              "name": "ICOTier2hardcapToken",
+                                              "nodeType": "Identifier",
+                                              "overloadedDeclarations": [],
+                                              "referencedDeclaration": 1339,
+                                              "src": "1222:20:12",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            }
+                                          ],
+                                          "expression": {
+                                            "argumentTypes": [
+                                              {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            ],
+                                            "expression": {
+                                              "argumentTypes": null,
+                                              "arguments": [
+                                                {
+                                                  "argumentTypes": null,
+                                                  "id": 1411,
+                                                  "name": "ICOTier3hardcapToken",
+                                                  "nodeType": "Identifier",
+                                                  "overloadedDeclarations": [],
+                                                  "referencedDeclaration": 1342,
+                                                  "src": "1196:20:12",
+                                                  "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                }
+                                              ],
+                                              "expression": {
+                                                "argumentTypes": [
+                                                  {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                ],
+                                                "expression": {
+                                                  "argumentTypes": null,
+                                                  "id": 1409,
+                                                  "name": "ICOTier4hardcapToken",
+                                                  "nodeType": "Identifier",
+                                                  "overloadedDeclarations": [],
+                                                  "referencedDeclaration": 1345,
+                                                  "src": "1171:20:12",
+                                                  "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                },
+                                                "id": 1410,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "add",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 111,
+                                                "src": "1171:24:12",
+                                                "typeDescriptions": {
+                                                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                                }
+                                              },
+                                              "id": 1412,
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": false,
+                                              "kind": "functionCall",
+                                              "lValueRequested": false,
+                                              "names": [],
+                                              "nodeType": "FunctionCall",
+                                              "src": "1171:46:12",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            },
+                                            "id": 1413,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "add",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 111,
+                                            "src": "1171:50:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                              "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                            }
+                                          },
+                                          "id": 1415,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "kind": "functionCall",
+                                          "lValueRequested": false,
+                                          "names": [],
+                                          "nodeType": "FunctionCall",
+                                          "src": "1171:72:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        },
+                                        "id": 1416,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "add",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 111,
+                                        "src": "1171:76:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                          "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                        }
+                                      },
+                                      "id": 1418,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "1171:98:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "id": 1419,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "add",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 111,
+                                    "src": "1171:102:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                      "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                    }
+                                  },
+                                  "id": 1421,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1171:122:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "functionReturnParameters": 1353,
+                                "id": 1422,
+                                "nodeType": "Return",
+                                "src": "1164:129:12"
+                              }
+                            ]
+                          }
+                        },
+                        "id": 1425,
+                        "nodeType": "IfStatement",
+                        "src": "951:354:12",
+                        "trueBody": {
+                          "id": 1404,
+                          "nodeType": "Block",
+                          "src": "982:130:12",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "id": 1401,
+                                    "name": "preICOherdcapToken",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1333,
+                                    "src": "1081:18:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "arguments": [
+                                      {
+                                        "argumentTypes": null,
+                                        "id": 1398,
+                                        "name": "ICOTier1hardcapToken",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 1336,
+                                        "src": "1055:20:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      ],
+                                      "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                          {
+                                            "argumentTypes": null,
+                                            "id": 1395,
+                                            "name": "ICOTier2hardcapToken",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 1339,
+                                            "src": "1029:20:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          }
+                                        ],
+                                        "expression": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          ],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 1393,
+                                            "name": "ICOTier3hardcapToken",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 1342,
+                                            "src": "1004:20:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          },
+                                          "id": 1394,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "add",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 111,
+                                          "src": "1004:24:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                          }
+                                        },
+                                        "id": 1396,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1004:46:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "id": 1397,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberName": "add",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 111,
+                                      "src": "1004:50:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                      }
+                                    },
+                                    "id": 1399,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "functionCall",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1004:72:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "id": 1400,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "add",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 111,
+                                  "src": "1004:76:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                    "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                  }
+                                },
+                                "id": 1402,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1004:96:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "functionReturnParameters": 1353,
+                              "id": 1403,
+                              "nodeType": "Return",
+                              "src": "997:103:12"
+                            }
+                          ]
+                        }
+                      },
+                      "id": 1426,
+                      "nodeType": "IfStatement",
+                      "src": "810:495:12",
+                      "trueBody": {
+                        "id": 1388,
+                        "nodeType": "Block",
+                        "src": "841:104:12",
+                        "statements": [
+                          {
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 1385,
+                                  "name": "preICOherdcapToken",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1333,
+                                  "src": "914:18:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "arguments": [
+                                    {
+                                      "argumentTypes": null,
+                                      "id": 1382,
+                                      "name": "ICOTier1hardcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1336,
+                                      "src": "888:20:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 1380,
+                                      "name": "ICOTier2hardcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1339,
+                                      "src": "863:20:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "id": 1381,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "add",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 111,
+                                    "src": "863:24:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                      "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                    }
+                                  },
+                                  "id": 1383,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "863:46:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "id": 1384,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "add",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 111,
+                                "src": "863:50:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                }
+                              },
+                              "id": 1386,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "863:70:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "functionReturnParameters": 1353,
+                            "id": 1387,
+                            "nodeType": "Return",
+                            "src": "856:77:12"
+                          }
+                        ]
+                      }
+                    },
+                    "id": 1427,
+                    "nodeType": "IfStatement",
+                    "src": "695:610:12",
+                    "trueBody": {
+                      "id": 1375,
+                      "nodeType": "Block",
+                      "src": "726:78:12",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 1372,
+                                "name": "preICOherdcapToken",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1333,
+                                "src": "773:18:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1370,
+                                "name": "ICOTier1hardcapToken",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1336,
+                                "src": "748:20:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 1371,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "add",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 111,
+                              "src": "748:24:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256,uint256) pure returns (uint256)"
+                              }
+                            },
+                            "id": 1373,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "748:44:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 1353,
+                          "id": 1374,
+                          "nodeType": "Return",
+                          "src": "741:51:12"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 1428,
+                  "nodeType": "IfStatement",
+                  "src": "609:696:12",
+                  "trueBody": {
+                    "id": 1365,
+                    "nodeType": "Block",
+                    "src": "637:52:12",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1363,
+                          "name": "preICOherdcapToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1333,
+                          "src": "659:18:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1353,
+                        "id": 1364,
+                        "nodeType": "Return",
+                        "src": "652:25:12"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1430,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1348,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1347,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "501:17:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "501:17:12"
+              },
+              {
+                "arguments": null,
+                "id": 1350,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1349,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "524:15:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "524:15:12"
+              }
+            ],
+            "name": "getTierHardcapToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "469:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1352,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1430,
+                  "src": "554:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "553:9:12"
+            },
+            "scope": 1431,
+            "src": "441:871:12",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1432,
+        "src": "59:1258:12"
+      }
+    ],
+    "src": "0:1317:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierCap.sol",
+    "exportedSymbols": {
+      "TierCap": [
+        1431
+      ]
+    },
+    "id": 1432,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1318,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierPricing.sol",
+        "file": "./TierPricing.sol",
+        "id": 1319,
+        "nodeType": "ImportDirective",
+        "scope": 1432,
+        "sourceUnit": 1526,
+        "src": "28:27:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1320,
+              "name": "TierPricing",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1525,
+              "src": "79:11:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TierPricing_$1525",
+                "typeString": "contract TierPricing"
+              }
+            },
+            "id": 1321,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:11:12"
+          }
+        ],
+        "contractDependencies": [
+          1525,
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1431,
+        "linearizedBaseContracts": [
+          1431,
+          1525,
+          1630
+        ],
+        "name": "TierCap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1324,
+            "name": "hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "98:33:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1322,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "316539",
+              "id": 1323,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "128:3:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000000_by_1",
+                "typeString": "int_const 1000000000"
+              },
+              "value": "1e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1330,
+            "name": "softcapEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "138:46:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1325,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "138:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "336536",
+                  "id": 1328,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "180:3:12",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_3000000_by_1",
+                    "typeString": "int_const 3000000"
+                  },
+                  "value": "3e6"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_3000000_by_1",
+                    "typeString": "int_const 3000000"
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": null,
+                  "id": 1326,
+                  "name": "ETH_USD",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1438,
+                  "src": "168:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 1327,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "memberName": "mul",
+                "nodeType": "MemberAccess",
+                "referencedDeclaration": 53,
+                "src": "168:11:12",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                }
+              },
+              "id": 1329,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": false,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "168:16:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1333,
+            "name": "preICOherdcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "191:41:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1331,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "191:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132306536",
+              "id": 1332,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "227:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_120000000_by_1",
+                "typeString": "int_const 120000000"
+              },
+              "value": "120e6"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1336,
+            "name": "ICOTier1hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "239:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1334,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "239:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1335,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "277:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1339,
+            "name": "ICOTier2hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "289:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1337,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "289:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1338,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "327:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1342,
+            "name": "ICOTier3hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "339:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1340,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "339:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1341,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "377:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1345,
+            "name": "ICOTier4hardcapToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 1431,
+            "src": "389:43:12",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1343,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "389:7:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3132356539",
+              "id": 1344,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "427:5:12",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_125000000000_by_1",
+                "typeString": "int_const 125000000000"
+              },
+              "value": "125e9"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1429,
+              "nodeType": "Block",
+              "src": "563:749:12",
+              "statements": [
+                {
+                  "assignments": [
+                    1355
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1355,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1430,
+                      "src": "574:12:12",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1354,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "574:6:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1358,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1356,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "589:7:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1357,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "589:9:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "574:24:12"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1362,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1359,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1355,
+                      "src": "613:5:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1360,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "622:6:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1361,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "622:13:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "613:22:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "id": 1369,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 1366,
+                        "name": "round",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1355,
+                        "src": "699:5:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1367,
+                          "name": "Rounds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1539,
+                          "src": "708:6:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                            "typeString": "type(enum Tierline.Rounds)"
+                          }
+                        },
+                        "id": 1368,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "ICORound1",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "708:16:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "src": "699:25:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "condition": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1379,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1376,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1355,
+                          "src": "814:5:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1377,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "823:6:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1378,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "ICORound2",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "823:16:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "814:25:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "falseBody": {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          },
+                          "id": 1392,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 1389,
+                            "name": "round",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1355,
+                            "src": "955:5:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1390,
+                              "name": "Rounds",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1539,
+                              "src": "964:6:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                "typeString": "type(enum Tierline.Rounds)"
+                              }
+                            },
+                            "id": 1391,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "ICORound3",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "964:16:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "src": "955:25:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "condition": {
+                            "argumentTypes": null,
+                            "commonType": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            },
+                            "id": 1408,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "argumentTypes": null,
+                              "id": 1405,
+                              "name": "round",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1355,
+                              "src": "1122:5:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "==",
+                            "rightExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1406,
+                                "name": "Rounds",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1539,
+                                "src": "1131:6:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                  "typeString": "type(enum Tierline.Rounds)"
+                                }
+                              },
+                              "id": 1407,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "ICORound4",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "1131:16:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "src": "1122:25:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "falseBody": null,
+                          "id": 1424,
+                          "nodeType": "IfStatement",
+                          "src": "1118:187:12",
+                          "trueBody": {
+                            "id": 1423,
+                            "nodeType": "Block",
+                            "src": "1149:156:12",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "arguments": [
+                                    {
+                                      "argumentTypes": null,
+                                      "id": 1420,
+                                      "name": "preICOherdcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1333,
+                                      "src": "1274:18:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "arguments": [
+                                        {
+                                          "argumentTypes": null,
+                                          "id": 1417,
+                                          "name": "ICOTier1hardcapToken",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 1336,
+                                          "src": "1248:20:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        }
+                                      ],
+                                      "expression": {
+                                        "argumentTypes": [
+                                          {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        ],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "arguments": [
+                                            {
+                                              "argumentTypes": null,
+                                              "id": 1414,
+                                              "name": "ICOTier2hardcapToken",
+                                              "nodeType": "Identifier",
+                                              "overloadedDeclarations": [],
+                                              "referencedDeclaration": 1339,
+                                              "src": "1222:20:12",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            }
+                                          ],
+                                          "expression": {
+                                            "argumentTypes": [
+                                              {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            ],
+                                            "expression": {
+                                              "argumentTypes": null,
+                                              "arguments": [
+                                                {
+                                                  "argumentTypes": null,
+                                                  "id": 1411,
+                                                  "name": "ICOTier3hardcapToken",
+                                                  "nodeType": "Identifier",
+                                                  "overloadedDeclarations": [],
+                                                  "referencedDeclaration": 1342,
+                                                  "src": "1196:20:12",
+                                                  "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                }
+                                              ],
+                                              "expression": {
+                                                "argumentTypes": [
+                                                  {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                ],
+                                                "expression": {
+                                                  "argumentTypes": null,
+                                                  "id": 1409,
+                                                  "name": "ICOTier4hardcapToken",
+                                                  "nodeType": "Identifier",
+                                                  "overloadedDeclarations": [],
+                                                  "referencedDeclaration": 1345,
+                                                  "src": "1171:20:12",
+                                                  "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                  }
+                                                },
+                                                "id": 1410,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "add",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 111,
+                                                "src": "1171:24:12",
+                                                "typeDescriptions": {
+                                                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                                }
+                                              },
+                                              "id": 1412,
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": false,
+                                              "kind": "functionCall",
+                                              "lValueRequested": false,
+                                              "names": [],
+                                              "nodeType": "FunctionCall",
+                                              "src": "1171:46:12",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                              }
+                                            },
+                                            "id": 1413,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "add",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 111,
+                                            "src": "1171:50:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                              "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                            }
+                                          },
+                                          "id": 1415,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "kind": "functionCall",
+                                          "lValueRequested": false,
+                                          "names": [],
+                                          "nodeType": "FunctionCall",
+                                          "src": "1171:72:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        },
+                                        "id": 1416,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "add",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 111,
+                                        "src": "1171:76:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                          "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                        }
+                                      },
+                                      "id": 1418,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "1171:98:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "id": 1419,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "add",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 111,
+                                    "src": "1171:102:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                      "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                    }
+                                  },
+                                  "id": 1421,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1171:122:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "functionReturnParameters": 1353,
+                                "id": 1422,
+                                "nodeType": "Return",
+                                "src": "1164:129:12"
+                              }
+                            ]
+                          }
+                        },
+                        "id": 1425,
+                        "nodeType": "IfStatement",
+                        "src": "951:354:12",
+                        "trueBody": {
+                          "id": 1404,
+                          "nodeType": "Block",
+                          "src": "982:130:12",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "id": 1401,
+                                    "name": "preICOherdcapToken",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1333,
+                                    "src": "1081:18:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "arguments": [
+                                      {
+                                        "argumentTypes": null,
+                                        "id": 1398,
+                                        "name": "ICOTier1hardcapToken",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 1336,
+                                        "src": "1055:20:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      ],
+                                      "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                          {
+                                            "argumentTypes": null,
+                                            "id": 1395,
+                                            "name": "ICOTier2hardcapToken",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 1339,
+                                            "src": "1029:20:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          }
+                                        ],
+                                        "expression": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          ],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 1393,
+                                            "name": "ICOTier3hardcapToken",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 1342,
+                                            "src": "1004:20:12",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          },
+                                          "id": 1394,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "add",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 111,
+                                          "src": "1004:24:12",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                          }
+                                        },
+                                        "id": 1396,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1004:46:12",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "id": 1397,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberName": "add",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 111,
+                                      "src": "1004:50:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                      }
+                                    },
+                                    "id": 1399,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "functionCall",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1004:72:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "id": 1400,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "add",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 111,
+                                  "src": "1004:76:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                    "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                  }
+                                },
+                                "id": 1402,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1004:96:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "functionReturnParameters": 1353,
+                              "id": 1403,
+                              "nodeType": "Return",
+                              "src": "997:103:12"
+                            }
+                          ]
+                        }
+                      },
+                      "id": 1426,
+                      "nodeType": "IfStatement",
+                      "src": "810:495:12",
+                      "trueBody": {
+                        "id": 1388,
+                        "nodeType": "Block",
+                        "src": "841:104:12",
+                        "statements": [
+                          {
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 1385,
+                                  "name": "preICOherdcapToken",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1333,
+                                  "src": "914:18:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "arguments": [
+                                    {
+                                      "argumentTypes": null,
+                                      "id": 1382,
+                                      "name": "ICOTier1hardcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1336,
+                                      "src": "888:20:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 1380,
+                                      "name": "ICOTier2hardcapToken",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 1339,
+                                      "src": "863:20:12",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "id": 1381,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "add",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 111,
+                                    "src": "863:24:12",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                      "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                    }
+                                  },
+                                  "id": 1383,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "863:46:12",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "id": 1384,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "add",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 111,
+                                "src": "863:50:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                  "typeString": "function (uint256,uint256) pure returns (uint256)"
+                                }
+                              },
+                              "id": 1386,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "863:70:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "functionReturnParameters": 1353,
+                            "id": 1387,
+                            "nodeType": "Return",
+                            "src": "856:77:12"
+                          }
+                        ]
+                      }
+                    },
+                    "id": 1427,
+                    "nodeType": "IfStatement",
+                    "src": "695:610:12",
+                    "trueBody": {
+                      "id": 1375,
+                      "nodeType": "Block",
+                      "src": "726:78:12",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 1372,
+                                "name": "preICOherdcapToken",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1333,
+                                "src": "773:18:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1370,
+                                "name": "ICOTier1hardcapToken",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1336,
+                                "src": "748:20:12",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 1371,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "add",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 111,
+                              "src": "748:24:12",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256,uint256) pure returns (uint256)"
+                              }
+                            },
+                            "id": 1373,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "748:44:12",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 1353,
+                          "id": 1374,
+                          "nodeType": "Return",
+                          "src": "741:51:12"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 1428,
+                  "nodeType": "IfStatement",
+                  "src": "609:696:12",
+                  "trueBody": {
+                    "id": 1365,
+                    "nodeType": "Block",
+                    "src": "637:52:12",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1363,
+                          "name": "preICOherdcapToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1333,
+                          "src": "659:18:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1353,
+                        "id": 1364,
+                        "nodeType": "Return",
+                        "src": "652:25:12"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1430,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1348,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1347,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "501:17:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "501:17:12"
+              },
+              {
+                "arguments": null,
+                "id": 1350,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1349,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "524:15:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "524:15:12"
+              }
+            ],
+            "name": "getTierHardcapToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "469:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1352,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1430,
+                  "src": "554:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "553:9:12"
+            },
+            "scope": 1431,
+            "src": "441:871:12",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1432,
+        "src": "59:1258:12"
+      }
+    ],
+    "src": "0:1317:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-29T10:45:28.283Z"
+}

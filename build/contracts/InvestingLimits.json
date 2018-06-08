@@ -1,0 +1,2374 @@
+{
+  "contractName": "InvestingLimits",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hasClosed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTokensPerETH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier4hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTier",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier3hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier1hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "preICOherdcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ICOTier2hardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTierHardcapToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minVestingEth",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "maxVestingEth",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052633b9aca00600a55610031622dc6c06004546100e2640100000000026108a4179091906401000000009004565b600b556307270e00600c55641d1a94a200600d55641d1a94a200600e55641d1a94a200600f55641d1a94a20060105534801561006c57600080fd5b506100b8670de0b6b3a764000061009d60045461c35061011a640100000000026108dc179091906401000000009004565b6100e2640100000000026108a4179091906401000000009004565b60118190555067016345785d8a0000601381905550681043561a8829300000601481905550610130565b6000808314156100f55760009050610114565b818302905081838281151561010657fe5b0414151561011057fe5b8090505b92915050565b6000818381151561012757fe5b04905092915050565b61091e8061013f6000396000f3006080604052600436106100ba576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b146100bf5780633be961b5146100ee5780633dd2b7ae1461011957806352f20fd2146101445780635ad701c21461016f5780637480fba8146101a8578063918f72c5146101d35780639bade612146101fe578063a2390d1314610229578063ba07ac0e14610254578063d13621e61461027f578063e537697e146102aa575b600080fd5b3480156100cb57600080fd5b506100d46102d5565b604051808215151515815260200191505060405180910390f35b3480156100fa57600080fd5b506101036102ed565b6040518082815260200191505060405180910390f35b34801561012557600080fd5b5061012e610424565b6040518082815260200191505060405180910390f35b34801561015057600080fd5b506101596104d0565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101846104d6565b6040518082600681111561019457fe5b60ff16815260200191505060405180910390f35b3480156101b457600080fd5b506101bd610516565b6040518082815260200191505060405180910390f35b3480156101df57600080fd5b506101e861051c565b6040518082815260200191505060405180910390f35b34801561020a57600080fd5b506102136105c8565b6040518082815260200191505060405180910390f35b34801561023557600080fd5b5061023e6105ce565b6040518082815260200191505060405180910390f35b34801561026057600080fd5b506102696105d4565b6040518082815260200191505060405180910390f35b34801561028b57600080fd5b506102946105da565b6040518082815260200191505060405180910390f35b3480156102b657600080fd5b506102bf6105e0565b6040518082815260200191505060405180910390f35b60008054421180156102e8575060015442105b905090565b60008060006102fa6104d6565b90506005600681111561030957fe5b81600681111561031557fe5b1415151561032257600080fd5b60068081111561032e57fe5b81600681111561033a57fe5b1415151561034757600080fd5b61034f6104d6565b91506000600681111561035e57fe5b82600681111561036a57fe5b141561037a57600554925061041f565b6001600681111561038757fe5b82600681111561039357fe5b14156103a357600654925061041f565b600260068111156103b057fe5b8260068111156103bc57fe5b14156103cc57600754925061041f565b600360068111156103d957fe5b8260068111156103e557fe5b14156103f557600854925061041f565b6004600681111561040257fe5b82600681111561040e57fe5b141561041e57600954925061041f565b5b505090565b60008061042f6102d5565b15151561043b57600080fd5b60006104456104d6565b90506005600681111561045457fe5b81600681111561046057fe5b1415151561046d57600080fd5b60068081111561047957fe5b81600681111561048557fe5b1415151561049257600080fd5b61049a6104d6565b9150600060068111156104a957fe5b8260068111156104b557fe5b14156104c55760125492506104cb565b60145492505b505090565b60105481565b600060036104e26107f3565b60ff168154811015156104f157fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b600f5481565b6000806105276102d5565b15151561053357600080fd5b600061053d6104d6565b90506005600681111561054c57fe5b81600681111561055857fe5b1415151561056557600080fd5b60068081111561057157fe5b81600681111561057d57fe5b1415151561058a57600080fd5b6105926104d6565b9150600060068111156105a157fe5b8260068111156105ad57fe5b14156105bd5760115492506105c3565b60135492505b505090565b600d5481565b600c5481565b600a5481565b600e5481565b6000806105eb6102d5565b1515156105f757600080fd5b60006106016104d6565b90506005600681111561061057fe5b81600681111561061c57fe5b1415151561062957600080fd5b60068081111561063557fe5b81600681111561064157fe5b1415151561064e57600080fd5b6106566104d6565b91506000600681111561066557fe5b82600681111561067157fe5b141561068157600c5492506107ee565b6001600681111561068e57fe5b82600681111561069a57fe5b14156106be576106b7600c54600d5461088890919063ffffffff16565b92506107ee565b600260068111156106cb57fe5b8260068111156106d757fe5b141561070f57610708600c546106fa600d54600e5461088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b6003600681111561071c57fe5b82600681111561072857fe5b14156107745761076d600c5461075f600d54610751600e54600f5461088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b6004600681111561078157fe5b82600681111561078d57fe5b14156107ed576107e6600c546107d8600d546107ca600e546107bc600f5460105461088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b5b505090565b6000806107fe6102d5565b15151561080a57600080fd5b600090505b6003805490508160ff16101561088357600260008260ff1660ff1681526020019081526020016000206000015442101580156108695750600260006001830160ff1660ff1681526020019081526020016000206000015442105b1561087657809150610884565b808060010191505061080f565b5b5090565b6000818301905082811015151561089b57fe5b80905092915050565b6000808314156108b757600090506108d6565b81830290508183828115156108c857fe5b041415156108d257fe5b8090505b92915050565b600081838115156108e957fe5b049050929150505600a165627a7a72305820d00d33577a2e042fb9693fc0a77d6cc2c240b20ebd2bf99b766d9e34f3ff779e0029",
+  "deployedBytecode": "0x6080604052600436106100ba576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b146100bf5780633be961b5146100ee5780633dd2b7ae1461011957806352f20fd2146101445780635ad701c21461016f5780637480fba8146101a8578063918f72c5146101d35780639bade612146101fe578063a2390d1314610229578063ba07ac0e14610254578063d13621e61461027f578063e537697e146102aa575b600080fd5b3480156100cb57600080fd5b506100d46102d5565b604051808215151515815260200191505060405180910390f35b3480156100fa57600080fd5b506101036102ed565b6040518082815260200191505060405180910390f35b34801561012557600080fd5b5061012e610424565b6040518082815260200191505060405180910390f35b34801561015057600080fd5b506101596104d0565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101846104d6565b6040518082600681111561019457fe5b60ff16815260200191505060405180910390f35b3480156101b457600080fd5b506101bd610516565b6040518082815260200191505060405180910390f35b3480156101df57600080fd5b506101e861051c565b6040518082815260200191505060405180910390f35b34801561020a57600080fd5b506102136105c8565b6040518082815260200191505060405180910390f35b34801561023557600080fd5b5061023e6105ce565b6040518082815260200191505060405180910390f35b34801561026057600080fd5b506102696105d4565b6040518082815260200191505060405180910390f35b34801561028b57600080fd5b506102946105da565b6040518082815260200191505060405180910390f35b3480156102b657600080fd5b506102bf6105e0565b6040518082815260200191505060405180910390f35b60008054421180156102e8575060015442105b905090565b60008060006102fa6104d6565b90506005600681111561030957fe5b81600681111561031557fe5b1415151561032257600080fd5b60068081111561032e57fe5b81600681111561033a57fe5b1415151561034757600080fd5b61034f6104d6565b91506000600681111561035e57fe5b82600681111561036a57fe5b141561037a57600554925061041f565b6001600681111561038757fe5b82600681111561039357fe5b14156103a357600654925061041f565b600260068111156103b057fe5b8260068111156103bc57fe5b14156103cc57600754925061041f565b600360068111156103d957fe5b8260068111156103e557fe5b14156103f557600854925061041f565b6004600681111561040257fe5b82600681111561040e57fe5b141561041e57600954925061041f565b5b505090565b60008061042f6102d5565b15151561043b57600080fd5b60006104456104d6565b90506005600681111561045457fe5b81600681111561046057fe5b1415151561046d57600080fd5b60068081111561047957fe5b81600681111561048557fe5b1415151561049257600080fd5b61049a6104d6565b9150600060068111156104a957fe5b8260068111156104b557fe5b14156104c55760125492506104cb565b60145492505b505090565b60105481565b600060036104e26107f3565b60ff168154811015156104f157fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b600f5481565b6000806105276102d5565b15151561053357600080fd5b600061053d6104d6565b90506005600681111561054c57fe5b81600681111561055857fe5b1415151561056557600080fd5b60068081111561057157fe5b81600681111561057d57fe5b1415151561058a57600080fd5b6105926104d6565b9150600060068111156105a157fe5b8260068111156105ad57fe5b14156105bd5760115492506105c3565b60135492505b505090565b600d5481565b600c5481565b600a5481565b600e5481565b6000806105eb6102d5565b1515156105f757600080fd5b60006106016104d6565b90506005600681111561061057fe5b81600681111561061c57fe5b1415151561062957600080fd5b60068081111561063557fe5b81600681111561064157fe5b1415151561064e57600080fd5b6106566104d6565b91506000600681111561066557fe5b82600681111561067157fe5b141561068157600c5492506107ee565b6001600681111561068e57fe5b82600681111561069a57fe5b14156106be576106b7600c54600d5461088890919063ffffffff16565b92506107ee565b600260068111156106cb57fe5b8260068111156106d757fe5b141561070f57610708600c546106fa600d54600e5461088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b6003600681111561071c57fe5b82600681111561072857fe5b14156107745761076d600c5461075f600d54610751600e54600f5461088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b6004600681111561078157fe5b82600681111561078d57fe5b14156107ed576107e6600c546107d8600d546107ca600e546107bc600f5460105461088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b61088890919063ffffffff16565b92506107ee565b5b505090565b6000806107fe6102d5565b15151561080a57600080fd5b600090505b6003805490508160ff16101561088357600260008260ff1660ff1681526020019081526020016000206000015442101580156108695750600260006001830160ff1660ff1681526020019081526020016000206000015442105b1561087657809150610884565b808060010191505061080f565b5b5090565b6000818301905082811015151561089b57fe5b80905092915050565b6000808314156108b757600090506108d6565b81830290508183828115156108c857fe5b041415156108d257fe5b8090505b92915050565b600081838115156108e957fe5b049050929150505600a165627a7a72305820d00d33577a2e042fb9693fc0a77d6cc2c240b20ebd2bf99b766d9e34f3ff779e0029",
+  "sourceMap": "55:992:8:-;;;128:3:12;98:33;;168:16;180:3;168:7;;:11;;;;;;:16;;;;;:::i;:::-;138:46;;227:5;191:41;;277:5;239:43;;327:5;289:43;;377:5;339:43;;427:5;389:43;;237:179:8;8:9:-1;5:2;;;30:1;27;20:12;5:2;237:179:8;291:39;322:7;291:26;309:7;;299:4;291:17;;;;;;:26;;;;;:::i;:::-;:30;;;;;;:39;;;;;:::i;:::-;269:19;:61;;;;360:9;341:16;:28;;;;399:9;380:16;:28;;;;55:992;;203:167:1;261:9;287:1;282;:6;278:35;;;305:1;298:8;;;;278:35;326:1;322;:5;318:9;;349:1;344;340;:5;;;;;;;;:10;333:18;;;;;;364:1;357:8;;203:167;;;;;:::o;452:272::-;510:7;718:1;714;:5;;;;;;;;707:12;;452:272;;;;:::o;55:992:8:-;;;;;;;",
+  "deployedSourceMap": "55:992:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:112:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;761:112:14;;;;;;;;;;;;;;;;;;;;;;;;;;;293:600:13;;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:600:13;;;;;;;;;;;;;;;;;;;;;;;738:306:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;738:306:8;;;;;;;;;;;;;;;;;;;;;;;389:43:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;389:43:12;;;;;;;;;;;;;;;;;;;;;;;656:97:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;656:97:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;339:43:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;339:43:12;;;;;;;;;;;;;;;;;;;;;;;424:306:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;424:306:8;;;;;;;;;;;;;;;;;;;;;;;239:43:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;239:43:12;;;;;;;;;;;;;;;;;;;;;;;191:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:41:12;;;;;;;;;;;;;;;;;;;;;;;98:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:33:12;;;;;;;;;;;;;;;;;;;;;;;289:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;289:43:12;;;;;;;;;;;;;;;;;;;;;;;441:871;;8:9:-1;5:2;;;30:1;27;20:12;5:2;441:871:12;;;;;;;;;;;;;;;;;;;;;;;761:112:14;803:4;833:11;;827:3;:17;:37;;;;;854:10;;848:3;:16;827:37;819:46;;761:112;:::o;293:600:13:-;381:7;407:12;939;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;422:9;:7;:9::i;:::-;407:24;;455:13;446:22;;;;;;;;:5;:22;;;;;;;;;442:444;;;492:18;;485:25;;;;442:444;541:16;532:25;;;;;;;;:5;:25;;;;;;;;;528:358;;;581:20;;574:27;;;;528:358;632:16;623:25;;;;;;;;:5;:25;;;;;;;;;619:267;;;672:20;;665:27;;;;619:267;723:16;714:25;;;;;;;;:5;:25;;;;;;;;;710:176;;;763:20;;756:27;;;;710:176;814:16;805:25;;;;;;;;:5;:25;;;;;;;;;801:85;;;854:20;;847:27;;;;801:85;1067:1;293:600;;;:::o;738:306:8:-;845:7;865:12;930:11:14;:9;:11::i;:::-;929:12;921:21;;;;;;;;939:12:13;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;880:9:8;:7;:9::i;:::-;865:24;;913:13;904:22;;;;;;;;:5;:22;;;;;;;;;900:137;;;950:19;;943:26;;;;900:137;1009:16;;1002:23;;1067:1:13;953::14;738:306:8;;:::o;389:43:12:-;;;;:::o;656:97:14:-;696:6;722;729:15;:13;:15::i;:::-;722:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;715:30;;656:97;:::o;339:43:12:-;;;;:::o;424:306:8:-;531:7;551:12;930:11:14;:9;:11::i;:::-;929:12;921:21;;;;;;;;939:12:13;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;566:9:8;:7;:9::i;:::-;551:24;;599:13;590:22;;;;;;;;:5;:22;;;;;;;;;586:137;;;636:19;;629:26;;;;586:137;695:16;;688:23;;1067:1:13;953::14;424:306:8;;:::o;239:43:12:-;;;;:::o;191:41::-;;;;:::o;98:33::-;;;;:::o;289:43::-;;;;:::o;441:871::-;554:7;574:12;930:11:14;:9;:11::i;:::-;929:12;921:21;;;;;;;;939:12:13;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;589:9:12;:7;:9::i;:::-;574:24;;622:13;613:22;;;;;;;;:5;:22;;;;;;;;;609:696;;;659:18;;652:25;;;;609:696;708:16;699:25;;;;;;;;:5;:25;;;;;;;;;695:610;;;748:44;773:18;;748:20;;:24;;:44;;;;:::i;:::-;741:51;;;;695:610;823:16;814:25;;;;;;;;:5;:25;;;;;;;;;810:495;;;863:70;914:18;;863:46;888:20;;863;;:24;;:46;;;;:::i;:::-;:50;;:70;;;;:::i;:::-;856:77;;;;810:495;964:16;955:25;;;;;;;;:5;:25;;;;;;;;;951:354;;;1004:96;1081:18;;1004:72;1055:20;;1004:46;1029:20;;1004;;:24;;:46;;;;:::i;:::-;:50;;:72;;;;:::i;:::-;:76;;:96;;;;:::i;:::-;997:103;;;;951:354;1131:16;1122:25;;;;;;;;:5;:25;;;;;;;;;1118:187;;;1171:122;1274:18;;1171:98;1248:20;;1171:72;1222:20;;1171:46;1196:20;;1171;;:24;;:46;;;;:::i;:::-;:50;;:72;;;;:::i;:::-;:76;;:98;;;;:::i;:::-;:102;;:122;;;;:::i;:::-;1164:129;;;;1118:187;1067:1:13;953::14;441:871:12;;:::o;393:255:14:-;459:5;482:7;930:11;:9;:11::i;:::-;929:12;921:21;;;;;;;;492:1;482:11;;477:164;499:6;:13;;;;495:1;:17;;;477:164;;;545:5;:8;551:1;545:8;;;;;;;;;;;;;;;:14;;;538:3;:21;;:47;;;;;569:5;:10;577:1;575;:3;569:10;;;;;;;;;;;;;;;:16;;;563:3;:22;538:47;534:96;;;613:1;606:8;;;;534:96;514:3;;;;;;;477:164;;;953:1;393:255;;:::o;1008:123:1:-;1066:9;1091:1;1087;:5;1083:9;;1110:1;1105;:6;;1098:14;;;;;;1125:1;1118:8;;1008:123;;;;:::o;203:167::-;261:9;287:1;282;:6;278:35;;;305:1;298:8;;;;278:35;326:1;322;:5;318:9;;349:1;344;340;:5;;;;;;;;:10;333:18;;;;;;364:1;357:8;;203:167;;;;;:::o;452:272::-;510:7;718:1;714;:5;;;;;;;;707:12;;452:272;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./TierCap.sol\";\r\n\r\ncontract InvestingLimits is TierCap {\r\n    uint256 preICOMinVestingEth;\r\n    uint256 preICOMaxVestingEth; // ???\r\n    uint256 ICOMinVestingEth;\r\n    uint256 ICOMaxVestingEth;\r\n\r\n    constructor() public {\r\n        preICOMinVestingEth = uint256(50e3).div(ETH_USD).mul(1 ether);\r\n        ICOMinVestingEth = 0.1 ether;\r\n        ICOMaxVestingEth = 300 ether;\r\n    }\r\n\r\n    function minVestingEth() \r\n    public \r\n    view\r\n    onlyWhieNotClosed\r\n    purchaseAllowed\r\n    returns (uint256) {\r\n        Rounds round = getTier();\r\n        if (round == Rounds.preICO) {\r\n            return preICOMinVestingEth;\r\n        } else {\r\n            return ICOMinVestingEth;\r\n        }\r\n    }\r\n\r\n    function maxVestingEth() \r\n    public \r\n    view\r\n    onlyWhieNotClosed\r\n    purchaseAllowed\r\n    returns (uint256) {\r\n        Rounds round = getTier();\r\n        if (round == Rounds.preICO) {\r\n            return preICOMaxVestingEth;\r\n        } else {\r\n            return ICOMaxVestingEth;\r\n        }\r\n    }\r\n}",
+  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\crowdSale\\InvestingLimits.sol",
+  "ast": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/InvestingLimits.sol",
+    "exportedSymbols": {
+      "InvestingLimits": [
+        1039
+      ]
+    },
+    "id": 1040,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 951,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierCap.sol",
+        "file": "./TierCap.sol",
+        "id": 952,
+        "nodeType": "ImportDirective",
+        "scope": 1040,
+        "sourceUnit": 1432,
+        "src": "28:23:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 953,
+              "name": "TierCap",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1431,
+              "src": "83:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TierCap_$1431",
+                "typeString": "contract TierCap"
+              }
+            },
+            "id": 954,
+            "nodeType": "InheritanceSpecifier",
+            "src": "83:7:8"
+          }
+        ],
+        "contractDependencies": [
+          1431,
+          1525,
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1039,
+        "linearizedBaseContracts": [
+          1039,
+          1431,
+          1525,
+          1630
+        ],
+        "name": "InvestingLimits",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 956,
+            "name": "preICOMinVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "98:27:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 955,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 958,
+            "name": "preICOMaxVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "132:27:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 957,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "132:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 960,
+            "name": "ICOMinVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "173:24:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 959,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 962,
+            "name": "ICOMaxVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "204:24:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 961,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "204:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 985,
+              "nodeType": "Block",
+              "src": "258:158:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 975,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 965,
+                      "name": "preICOMinVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 956,
+                      "src": "269:19:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 973,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "322:7:8",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                            "typeString": "int_const 1000000000000000000"
+                          },
+                          "value": "1"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                            "typeString": "int_const 1000000000000000000"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 970,
+                              "name": "ETH_USD",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1438,
+                              "src": "309:7:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "hexValue": "35306533",
+                                  "id": 967,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "299:4:8",
+                                  "subdenomination": null,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_50000_by_1",
+                                    "typeString": "int_const 50000"
+                                  },
+                                  "value": "50e3"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_rational_50000_by_1",
+                                    "typeString": "int_const 50000"
+                                  }
+                                ],
+                                "id": 966,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "291:7:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": "uint256"
+                              },
+                              "id": 968,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "291:13:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 969,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "div",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 67,
+                            "src": "291:17:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                              "typeString": "function (uint256,uint256) pure returns (uint256)"
+                            }
+                          },
+                          "id": 971,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "291:26:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 972,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "mul",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 53,
+                        "src": "291:30:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256,uint256) pure returns (uint256)"
+                        }
+                      },
+                      "id": 974,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "291:39:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "269:61:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 976,
+                  "nodeType": "ExpressionStatement",
+                  "src": "269:61:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 979,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 977,
+                      "name": "ICOMinVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 960,
+                      "src": "341:16:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "302e31",
+                      "id": 978,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "360:9:8",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000000000000000_by_1",
+                        "typeString": "int_const 100000000000000000"
+                      },
+                      "value": "0.1"
+                    },
+                    "src": "341:28:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 980,
+                  "nodeType": "ExpressionStatement",
+                  "src": "341:28:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 983,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 981,
+                      "name": "ICOMaxVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 962,
+                      "src": "380:16:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "333030",
+                      "id": 982,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "399:9:8",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_300000000000000000000_by_1",
+                        "typeString": "int_const 300000000000000000000"
+                      },
+                      "value": "300"
+                    },
+                    "src": "380:28:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 984,
+                  "nodeType": "ExpressionStatement",
+                  "src": "380:28:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 986,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "248:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 964,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:0:8"
+            },
+            "scope": 1039,
+            "src": "237:179:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1011,
+              "nodeType": "Block",
+              "src": "540:190:8",
+              "statements": [
+                {
+                  "assignments": [
+                    996
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 996,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1012,
+                      "src": "551:12:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 995,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "551:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 999,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 997,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "566:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 998,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "566:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "551:24:8"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1003,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1000,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 996,
+                      "src": "590:5:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1001,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "599:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1002,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "599:13:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "590:22:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 1009,
+                    "nodeType": "Block",
+                    "src": "673:50:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1007,
+                          "name": "ICOMinVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 960,
+                          "src": "695:16:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 994,
+                        "id": 1008,
+                        "nodeType": "Return",
+                        "src": "688:23:8"
+                      }
+                    ]
+                  },
+                  "id": 1010,
+                  "nodeType": "IfStatement",
+                  "src": "586:137:8",
+                  "trueBody": {
+                    "id": 1006,
+                    "nodeType": "Block",
+                    "src": "614:53:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1004,
+                          "name": "preICOMinVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 956,
+                          "src": "636:19:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 994,
+                        "id": 1005,
+                        "nodeType": "Return",
+                        "src": "629:26:8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1012,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 989,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 988,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "478:17:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "478:17:8"
+              },
+              {
+                "arguments": null,
+                "id": 991,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 990,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "501:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "501:15:8"
+              }
+            ],
+            "name": "minVestingEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 987,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "446:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1012,
+                  "src": "531:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 992,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "530:9:8"
+            },
+            "scope": 1039,
+            "src": "424:306:8",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1037,
+              "nodeType": "Block",
+              "src": "854:190:8",
+              "statements": [
+                {
+                  "assignments": [
+                    1022
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1022,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1038,
+                      "src": "865:12:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1021,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "865:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1025,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1023,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "880:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1024,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "880:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "865:24:8"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1029,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1026,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1022,
+                      "src": "904:5:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1027,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "913:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1028,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "913:13:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "904:22:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 1035,
+                    "nodeType": "Block",
+                    "src": "987:50:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1033,
+                          "name": "ICOMaxVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 962,
+                          "src": "1009:16:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1020,
+                        "id": 1034,
+                        "nodeType": "Return",
+                        "src": "1002:23:8"
+                      }
+                    ]
+                  },
+                  "id": 1036,
+                  "nodeType": "IfStatement",
+                  "src": "900:137:8",
+                  "trueBody": {
+                    "id": 1032,
+                    "nodeType": "Block",
+                    "src": "928:53:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1030,
+                          "name": "preICOMaxVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 958,
+                          "src": "950:19:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1020,
+                        "id": 1031,
+                        "nodeType": "Return",
+                        "src": "943:26:8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1038,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1015,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1014,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "792:17:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "792:17:8"
+              },
+              {
+                "arguments": null,
+                "id": 1017,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1016,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "815:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "815:15:8"
+              }
+            ],
+            "name": "maxVestingEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1013,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "760:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1020,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1019,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1038,
+                  "src": "845:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1018,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "844:9:8"
+            },
+            "scope": 1039,
+            "src": "738:306:8",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1040,
+        "src": "55:992:8"
+      }
+    ],
+    "src": "0:1047:8"
+  },
+  "legacyAST": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/InvestingLimits.sol",
+    "exportedSymbols": {
+      "InvestingLimits": [
+        1039
+      ]
+    },
+    "id": 1040,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 951,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierCap.sol",
+        "file": "./TierCap.sol",
+        "id": 952,
+        "nodeType": "ImportDirective",
+        "scope": 1040,
+        "sourceUnit": 1432,
+        "src": "28:23:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 953,
+              "name": "TierCap",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1431,
+              "src": "83:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TierCap_$1431",
+                "typeString": "contract TierCap"
+              }
+            },
+            "id": 954,
+            "nodeType": "InheritanceSpecifier",
+            "src": "83:7:8"
+          }
+        ],
+        "contractDependencies": [
+          1431,
+          1525,
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1039,
+        "linearizedBaseContracts": [
+          1039,
+          1431,
+          1525,
+          1630
+        ],
+        "name": "InvestingLimits",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 956,
+            "name": "preICOMinVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "98:27:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 955,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 958,
+            "name": "preICOMaxVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "132:27:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 957,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "132:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 960,
+            "name": "ICOMinVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "173:24:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 959,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 962,
+            "name": "ICOMaxVestingEth",
+            "nodeType": "VariableDeclaration",
+            "scope": 1039,
+            "src": "204:24:8",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 961,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "204:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 985,
+              "nodeType": "Block",
+              "src": "258:158:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 975,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 965,
+                      "name": "preICOMinVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 956,
+                      "src": "269:19:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 973,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "322:7:8",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                            "typeString": "int_const 1000000000000000000"
+                          },
+                          "value": "1"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                            "typeString": "int_const 1000000000000000000"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 970,
+                              "name": "ETH_USD",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1438,
+                              "src": "309:7:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "hexValue": "35306533",
+                                  "id": 967,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "299:4:8",
+                                  "subdenomination": null,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_50000_by_1",
+                                    "typeString": "int_const 50000"
+                                  },
+                                  "value": "50e3"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_rational_50000_by_1",
+                                    "typeString": "int_const 50000"
+                                  }
+                                ],
+                                "id": 966,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "291:7:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": "uint256"
+                              },
+                              "id": 968,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "291:13:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 969,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "div",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 67,
+                            "src": "291:17:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                              "typeString": "function (uint256,uint256) pure returns (uint256)"
+                            }
+                          },
+                          "id": 971,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "291:26:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 972,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "mul",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 53,
+                        "src": "291:30:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256,uint256) pure returns (uint256)"
+                        }
+                      },
+                      "id": 974,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "291:39:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "269:61:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 976,
+                  "nodeType": "ExpressionStatement",
+                  "src": "269:61:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 979,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 977,
+                      "name": "ICOMinVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 960,
+                      "src": "341:16:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "302e31",
+                      "id": 978,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "360:9:8",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000000000000000_by_1",
+                        "typeString": "int_const 100000000000000000"
+                      },
+                      "value": "0.1"
+                    },
+                    "src": "341:28:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 980,
+                  "nodeType": "ExpressionStatement",
+                  "src": "341:28:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 983,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 981,
+                      "name": "ICOMaxVestingEth",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 962,
+                      "src": "380:16:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "333030",
+                      "id": 982,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "399:9:8",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_300000000000000000000_by_1",
+                        "typeString": "int_const 300000000000000000000"
+                      },
+                      "value": "300"
+                    },
+                    "src": "380:28:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 984,
+                  "nodeType": "ExpressionStatement",
+                  "src": "380:28:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 986,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "248:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 964,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:0:8"
+            },
+            "scope": 1039,
+            "src": "237:179:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1011,
+              "nodeType": "Block",
+              "src": "540:190:8",
+              "statements": [
+                {
+                  "assignments": [
+                    996
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 996,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1012,
+                      "src": "551:12:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 995,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "551:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 999,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 997,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "566:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 998,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "566:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "551:24:8"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1003,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1000,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 996,
+                      "src": "590:5:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1001,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "599:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1002,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "599:13:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "590:22:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 1009,
+                    "nodeType": "Block",
+                    "src": "673:50:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1007,
+                          "name": "ICOMinVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 960,
+                          "src": "695:16:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 994,
+                        "id": 1008,
+                        "nodeType": "Return",
+                        "src": "688:23:8"
+                      }
+                    ]
+                  },
+                  "id": 1010,
+                  "nodeType": "IfStatement",
+                  "src": "586:137:8",
+                  "trueBody": {
+                    "id": 1006,
+                    "nodeType": "Block",
+                    "src": "614:53:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1004,
+                          "name": "preICOMinVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 956,
+                          "src": "636:19:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 994,
+                        "id": 1005,
+                        "nodeType": "Return",
+                        "src": "629:26:8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1012,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 989,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 988,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "478:17:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "478:17:8"
+              },
+              {
+                "arguments": null,
+                "id": 991,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 990,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "501:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "501:15:8"
+              }
+            ],
+            "name": "minVestingEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 987,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "446:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1012,
+                  "src": "531:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 992,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "530:9:8"
+            },
+            "scope": 1039,
+            "src": "424:306:8",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1037,
+              "nodeType": "Block",
+              "src": "854:190:8",
+              "statements": [
+                {
+                  "assignments": [
+                    1022
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1022,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1038,
+                      "src": "865:12:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1021,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "865:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1025,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1023,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "880:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1024,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "880:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "865:24:8"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1029,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1026,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1022,
+                      "src": "904:5:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1027,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "913:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1028,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "913:13:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "904:22:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 1035,
+                    "nodeType": "Block",
+                    "src": "987:50:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1033,
+                          "name": "ICOMaxVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 962,
+                          "src": "1009:16:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1020,
+                        "id": 1034,
+                        "nodeType": "Return",
+                        "src": "1002:23:8"
+                      }
+                    ]
+                  },
+                  "id": 1036,
+                  "nodeType": "IfStatement",
+                  "src": "900:137:8",
+                  "trueBody": {
+                    "id": 1032,
+                    "nodeType": "Block",
+                    "src": "928:53:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1030,
+                          "name": "preICOMaxVestingEth",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 958,
+                          "src": "950:19:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1020,
+                        "id": 1031,
+                        "nodeType": "Return",
+                        "src": "943:26:8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1038,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1015,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1014,
+                  "name": "onlyWhieNotClosed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1629,
+                  "src": "792:17:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "792:17:8"
+              },
+              {
+                "arguments": null,
+                "id": 1017,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1016,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "815:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "815:15:8"
+              }
+            ],
+            "name": "maxVestingEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1013,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "760:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1020,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1019,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1038,
+                  "src": "845:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1018,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "844:9:8"
+            },
+            "scope": 1039,
+            "src": "738:306:8",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1040,
+        "src": "55:992:8"
+      }
+    ],
+    "src": "0:1047:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-29T10:45:28.272Z"
+}

@@ -1,0 +1,330 @@
+{
+  "contractName": "nonfallbackedReceiver",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b506000808190555060358060246000396000f3006080604052600080fd00a165627a7a723058204028cd0f9d0cd65d106f6d94d66d2b6d914ec2693dd3504bea79840d475fc88b0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058204028cd0f9d0cd65d106f6d94d66d2b6d914ec2693dd3504bea79840d475fc88b0029",
+  "sourceMap": "28:109:22:-;;;84:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:50:22;122:1;116:3;:7;;;;28:109;;;;;;",
+  "deployedSourceMap": "28:109:22:-;;;;;",
+  "source": "pragma solidity ^0.4.23;\r\n\r\ncontract nonfallbackedReceiver {\r\n    uint256 val;\r\n    constructor() public {\r\n        val = 0;   \r\n    }\r\n}",
+  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\test\\nonfallbackedReceiver.sol",
+  "ast": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/test/nonfallbackedReceiver.sol",
+    "exportedSymbols": {
+      "nonfallbackedReceiver": [
+        3646
+      ]
+    },
+    "id": 3647,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3635,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:22"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3646,
+        "linearizedBaseContracts": [
+          3646
+        ],
+        "name": "nonfallbackedReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3637,
+            "name": "val",
+            "nodeType": "VariableDeclaration",
+            "scope": 3646,
+            "src": "66:11:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3636,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "66:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 3644,
+              "nodeType": "Block",
+              "src": "105:29:22",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3642,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 3640,
+                      "name": "val",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3637,
+                      "src": "116:3:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 3641,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "122:1:22",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "116:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3643,
+                  "nodeType": "ExpressionStatement",
+                  "src": "116:7:22"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3645,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3638,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "95:2:22"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3639,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:22"
+            },
+            "scope": 3646,
+            "src": "84:50:22",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3647,
+        "src": "28:109:22"
+      }
+    ],
+    "src": "0:137:22"
+  },
+  "legacyAST": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/test/nonfallbackedReceiver.sol",
+    "exportedSymbols": {
+      "nonfallbackedReceiver": [
+        3646
+      ]
+    },
+    "id": 3647,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3635,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:22"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3646,
+        "linearizedBaseContracts": [
+          3646
+        ],
+        "name": "nonfallbackedReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3637,
+            "name": "val",
+            "nodeType": "VariableDeclaration",
+            "scope": 3646,
+            "src": "66:11:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3636,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "66:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 3644,
+              "nodeType": "Block",
+              "src": "105:29:22",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3642,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 3640,
+                      "name": "val",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3637,
+                      "src": "116:3:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 3641,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "122:1:22",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "116:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3643,
+                  "nodeType": "ExpressionStatement",
+                  "src": "116:7:22"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3645,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3638,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "95:2:22"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3639,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:22"
+            },
+            "scope": 3646,
+            "src": "84:50:22",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3647,
+        "src": "28:109:22"
+      }
+    ],
+    "src": "0:137:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-06-02T13:50:18.640Z"
+}

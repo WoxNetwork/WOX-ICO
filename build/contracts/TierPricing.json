@@ -1,0 +1,2350 @@
+{
+  "contractName": "TierPricing",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hasClosed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTier",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTokensPerETH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061033f806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b1461005c5780633be961b51461008b5780635ad701c2146100b6575b600080fd5b34801561006857600080fd5b506100716100ef565b604051808215151515815260200191505060405180910390f35b34801561009757600080fd5b506100a0610107565b6040518082815260200191505060405180910390f35b3480156100c257600080fd5b506100cb61023e565b604051808260068111156100db57fe5b60ff16815260200191505060405180910390f35b6000805442118015610102575060015442105b905090565b600080600061011461023e565b90506005600681111561012357fe5b81600681111561012f57fe5b1415151561013c57600080fd5b60068081111561014857fe5b81600681111561015457fe5b1415151561016157600080fd5b61016961023e565b91506000600681111561017857fe5b82600681111561018457fe5b1415610194576005549250610239565b600160068111156101a157fe5b8260068111156101ad57fe5b14156101bd576006549250610239565b600260068111156101ca57fe5b8260068111156101d657fe5b14156101e6576007549250610239565b600360068111156101f357fe5b8260068111156101ff57fe5b141561020f576008549250610239565b6004600681111561021c57fe5b82600681111561022857fe5b1415610238576009549250610239565b5b505090565b6000600361024a61027e565b60ff1681548110151561025957fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b6000806102896100ef565b15151561029557600080fd5b600090505b6003805490508160ff16101561030e57600260008260ff1660ff1681526020019081526020016000206000015442101580156102f45750600260006001830160ff1660ff1681526020019081526020016000206000015442105b156103015780915061030f565b808060010191505061029a565b5b50905600a165627a7a72305820aa1bb6ed4c67f656cbe350a39daf2f4ef80ee0b5230abc47c40a942fe92c8b930029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631515bc2b1461005c5780633be961b51461008b5780635ad701c2146100b6575b600080fd5b34801561006857600080fd5b506100716100ef565b604051808215151515815260200191505060405180910390f35b34801561009757600080fd5b506100a0610107565b6040518082815260200191505060405180910390f35b3480156100c257600080fd5b506100cb61023e565b604051808260068111156100db57fe5b60ff16815260200191505060405180910390f35b6000805442118015610102575060015442105b905090565b600080600061011461023e565b90506005600681111561012357fe5b81600681111561012f57fe5b1415151561013c57600080fd5b60068081111561014857fe5b81600681111561015457fe5b1415151561016157600080fd5b61016961023e565b91506000600681111561017857fe5b82600681111561018457fe5b1415610194576005549250610239565b600160068111156101a157fe5b8260068111156101ad57fe5b14156101bd576006549250610239565b600260068111156101ca57fe5b8260068111156101d657fe5b14156101e6576007549250610239565b600360068111156101f357fe5b8260068111156101ff57fe5b141561020f576008549250610239565b6004600681111561021c57fe5b82600681111561022857fe5b1415610238576009549250610239565b5b505090565b6000600361024a61027e565b60ff1681548110151561025957fe5b90600052602060002090602091828204019190069054906101000a900460ff16905090565b6000806102896100ef565b15151561029557600080fd5b600090505b6003805490508160ff16101561030e57600260008260ff1660ff1681526020019081526020016000206000015442101580156102f45750600260006001830160ff1660ff1681526020019081526020016000206000015442105b156103015780915061030f565b808060010191505061029a565b5b50905600a165627a7a72305820aa1bb6ed4c67f656cbe350a39daf2f4ef80ee0b5230abc47c40a942fe92c8b930029",
+  "sourceMap": "56:1023:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;56:1023:13;;;;;;;",
+  "deployedSourceMap": "56:1023:13:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:112:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;761:112:14;;;;;;;;;;;;;;;;;;;;;;;;;;;293:600:13;;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:600:13;;;;;;;;;;;;;;;;;;;;;;;656:97:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;656:97:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:112;803:4;833:11;;827:3;:17;:37;;;;;854:10;;848:3;:16;827:37;819:46;;761:112;:::o;293:600:13:-;381:7;407:12;939;954:9;:7;:9::i;:::-;939:24;;991:19;982:28;;;;;;;;:5;:28;;;;;;;;;;974:37;;;;;;;;1039:16;1030:25;;;;;;;;:5;:25;;;;;;;;;;1022:34;;;;;;;;422:9;:7;:9::i;:::-;407:24;;455:13;446:22;;;;;;;;:5;:22;;;;;;;;;442:444;;;492:18;;485:25;;;;442:444;541:16;532:25;;;;;;;;:5;:25;;;;;;;;;528:358;;;581:20;;574:27;;;;528:358;632:16;623:25;;;;;;;;:5;:25;;;;;;;;;619:267;;;672:20;;665:27;;;;619:267;723:16;714:25;;;;;;;;:5;:25;;;;;;;;;710:176;;;763:20;;756:27;;;;710:176;814:16;805:25;;;;;;;;:5;:25;;;;;;;;;801:85;;;854:20;;847:27;;;;801:85;1067:1;293:600;;;:::o;656:97:14:-;696:6;722;729:15;:13;:15::i;:::-;722:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;715:30;;656:97;:::o;393:255::-;459:5;482:7;930:11;:9;:11::i;:::-;929:12;921:21;;;;;;;;492:1;482:11;;477:164;499:6;:13;;;;495:1;:17;;;477:164;;;545:5;:8;551:1;545:8;;;;;;;;;;;;;;;:14;;;538:3;:21;;:47;;;;;569:5;:10;577:1;575;:3;569:10;;;;;;;;;;;;;;;:16;;;563:3;:22;538:47;534:96;;;613:1;606:8;;;;534:96;514:3;;;;;;;477:164;;;953:1;393:255;;:::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./Tierline.sol\";\r\n\r\ncontract TierPricing is Tierline {\r\n    uint256 ETH_USD;\r\n    uint256 preICOtokensPerETH;\r\n    uint256 ICOTier1tokensPerETH;\r\n    uint256 ICOTier2tokensPerETH;\r\n    uint256 ICOTier3tokensPerETH;\r\n    uint256 ICOTier4tokensPerETH;\r\n\r\n    function getTokensPerETH() \r\n    public \r\n    view \r\n    purchaseAllowed \r\n    returns (uint256) \r\n    {\r\n        Rounds round = getTier();\r\n        if (round == Rounds.preICO) {\r\n            return preICOtokensPerETH;\r\n        } else if (round == Rounds.ICORound1) {\r\n            return ICOTier1tokensPerETH;\r\n        } else if (round == Rounds.ICORound2) {\r\n            return ICOTier2tokensPerETH;\r\n        } else if (round == Rounds.ICORound3) {\r\n            return ICOTier3tokensPerETH;\r\n        } else if (round == Rounds.ICORound4) {\r\n            return ICOTier4tokensPerETH;\r\n        }\r\n    }\r\n\r\n    modifier purchaseAllowed() {\r\n        Rounds round = getTier();\r\n        require(round != Rounds.preWhitelist);\r\n        require(round != Rounds.Whitelist);\r\n        _;\r\n    }\r\n}",
+  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\crowdSale\\TierPricing.sol",
+  "ast": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierPricing.sol",
+    "exportedSymbols": {
+      "TierPricing": [
+        1525
+      ]
+    },
+    "id": 1526,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1433,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:13"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/Tierline.sol",
+        "file": "./Tierline.sol",
+        "id": 1434,
+        "nodeType": "ImportDirective",
+        "scope": 1526,
+        "sourceUnit": 1631,
+        "src": "28:24:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1435,
+              "name": "Tierline",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1630,
+              "src": "80:8:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Tierline_$1630",
+                "typeString": "contract Tierline"
+              }
+            },
+            "id": 1436,
+            "nodeType": "InheritanceSpecifier",
+            "src": "80:8:13"
+          }
+        ],
+        "contractDependencies": [
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1525,
+        "linearizedBaseContracts": [
+          1525,
+          1630
+        ],
+        "name": "TierPricing",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1438,
+            "name": "ETH_USD",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "96:15:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1437,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "96:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1440,
+            "name": "preICOtokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "118:26:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1439,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1442,
+            "name": "ICOTier1tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "151:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1441,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "151:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1444,
+            "name": "ICOTier2tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "186:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1443,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "186:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1446,
+            "name": "ICOTier3tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "221:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1445,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1448,
+            "name": "ICOTier4tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "256:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1447,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "256:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1500,
+              "nodeType": "Block",
+              "src": "396:497:13",
+              "statements": [
+                {
+                  "assignments": [
+                    1456
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1456,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1501,
+                      "src": "407:12:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1455,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "407:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1459,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1457,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "422:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1458,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "407:24:13"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1463,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1460,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1456,
+                      "src": "446:5:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1461,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "455:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1462,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "455:13:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "446:22:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "id": 1470,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 1467,
+                        "name": "round",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1456,
+                        "src": "532:5:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1468,
+                          "name": "Rounds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1539,
+                          "src": "541:6:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                            "typeString": "type(enum Tierline.Rounds)"
+                          }
+                        },
+                        "id": 1469,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "ICORound1",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "541:16:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "src": "532:25:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "condition": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1477,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1474,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1456,
+                          "src": "623:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1475,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "632:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1476,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "ICORound2",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "632:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "623:25:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "falseBody": {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          },
+                          "id": 1484,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 1481,
+                            "name": "round",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1456,
+                            "src": "714:5:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1482,
+                              "name": "Rounds",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1539,
+                              "src": "723:6:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                "typeString": "type(enum Tierline.Rounds)"
+                              }
+                            },
+                            "id": 1483,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "ICORound3",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "723:16:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "src": "714:25:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "condition": {
+                            "argumentTypes": null,
+                            "commonType": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            },
+                            "id": 1491,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "argumentTypes": null,
+                              "id": 1488,
+                              "name": "round",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1456,
+                              "src": "805:5:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "==",
+                            "rightExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1489,
+                                "name": "Rounds",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1539,
+                                "src": "814:6:13",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                  "typeString": "type(enum Tierline.Rounds)"
+                                }
+                              },
+                              "id": 1490,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "ICORound4",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "814:16:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "src": "805:25:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "falseBody": null,
+                          "id": 1495,
+                          "nodeType": "IfStatement",
+                          "src": "801:85:13",
+                          "trueBody": {
+                            "id": 1494,
+                            "nodeType": "Block",
+                            "src": "832:54:13",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 1492,
+                                  "name": "ICOTier4tokensPerETH",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1448,
+                                  "src": "854:20:13",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "functionReturnParameters": 1454,
+                                "id": 1493,
+                                "nodeType": "Return",
+                                "src": "847:27:13"
+                              }
+                            ]
+                          }
+                        },
+                        "id": 1496,
+                        "nodeType": "IfStatement",
+                        "src": "710:176:13",
+                        "trueBody": {
+                          "id": 1487,
+                          "nodeType": "Block",
+                          "src": "741:54:13",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1485,
+                                "name": "ICOTier3tokensPerETH",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1446,
+                                "src": "763:20:13",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "functionReturnParameters": 1454,
+                              "id": 1486,
+                              "nodeType": "Return",
+                              "src": "756:27:13"
+                            }
+                          ]
+                        }
+                      },
+                      "id": 1497,
+                      "nodeType": "IfStatement",
+                      "src": "619:267:13",
+                      "trueBody": {
+                        "id": 1480,
+                        "nodeType": "Block",
+                        "src": "650:54:13",
+                        "statements": [
+                          {
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1478,
+                              "name": "ICOTier2tokensPerETH",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1444,
+                              "src": "672:20:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "functionReturnParameters": 1454,
+                            "id": 1479,
+                            "nodeType": "Return",
+                            "src": "665:27:13"
+                          }
+                        ]
+                      }
+                    },
+                    "id": 1498,
+                    "nodeType": "IfStatement",
+                    "src": "528:358:13",
+                    "trueBody": {
+                      "id": 1473,
+                      "nodeType": "Block",
+                      "src": "559:54:13",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1471,
+                            "name": "ICOTier1tokensPerETH",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1442,
+                            "src": "581:20:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 1454,
+                          "id": 1472,
+                          "nodeType": "Return",
+                          "src": "574:27:13"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 1499,
+                  "nodeType": "IfStatement",
+                  "src": "442:444:13",
+                  "trueBody": {
+                    "id": 1466,
+                    "nodeType": "Block",
+                    "src": "470:52:13",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1464,
+                          "name": "preICOtokensPerETH",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1440,
+                          "src": "492:18:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1454,
+                        "id": 1465,
+                        "nodeType": "Return",
+                        "src": "485:25:13"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1501,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1451,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1450,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "350:15:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "350:15:13"
+              }
+            ],
+            "name": "getTokensPerETH",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1449,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "317:2:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1453,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1501,
+                  "src": "381:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1452,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "380:9:13"
+            },
+            "scope": 1525,
+            "src": "293:600:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1523,
+              "nodeType": "Block",
+              "src": "928:148:13",
+              "statements": [
+                {
+                  "assignments": [
+                    1504
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1504,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1524,
+                      "src": "939:12:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1503,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "939:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1507,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1505,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "954:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1506,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "954:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "939:24:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1512,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1509,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1504,
+                          "src": "982:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1510,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "991:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1511,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "preWhitelist",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "991:19:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "982:28:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 1508,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3234,
+                        3235
+                      ],
+                      "referencedDeclaration": 3234,
+                      "src": "974:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 1513,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "974:37:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1514,
+                  "nodeType": "ExpressionStatement",
+                  "src": "974:37:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1519,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1516,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1504,
+                          "src": "1030:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1517,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "1039:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1518,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "Whitelist",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1039:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "1030:25:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 1515,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3234,
+                        3235
+                      ],
+                      "referencedDeclaration": 3234,
+                      "src": "1022:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 1520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1022:34:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1521,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1022:34:13"
+                },
+                {
+                  "id": 1522,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1067:1:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1524,
+            "name": "purchaseAllowed",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 1502,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "925:2:13"
+            },
+            "src": "901:175:13",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1526,
+        "src": "56:1023:13"
+      }
+    ],
+    "src": "0:1079:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/TierPricing.sol",
+    "exportedSymbols": {
+      "TierPricing": [
+        1525
+      ]
+    },
+    "id": 1526,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1433,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:13"
+      },
+      {
+        "absolutePath": "/G/Root/Blockchain/BAX/contracts/crowdSale/Tierline.sol",
+        "file": "./Tierline.sol",
+        "id": 1434,
+        "nodeType": "ImportDirective",
+        "scope": 1526,
+        "sourceUnit": 1631,
+        "src": "28:24:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1435,
+              "name": "Tierline",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1630,
+              "src": "80:8:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Tierline_$1630",
+                "typeString": "contract Tierline"
+              }
+            },
+            "id": 1436,
+            "nodeType": "InheritanceSpecifier",
+            "src": "80:8:13"
+          }
+        ],
+        "contractDependencies": [
+          1630
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1525,
+        "linearizedBaseContracts": [
+          1525,
+          1630
+        ],
+        "name": "TierPricing",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1438,
+            "name": "ETH_USD",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "96:15:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1437,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "96:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1440,
+            "name": "preICOtokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "118:26:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1439,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1442,
+            "name": "ICOTier1tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "151:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1441,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "151:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1444,
+            "name": "ICOTier2tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "186:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1443,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "186:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1446,
+            "name": "ICOTier3tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "221:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1445,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1448,
+            "name": "ICOTier4tokensPerETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 1525,
+            "src": "256:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1447,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "256:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1500,
+              "nodeType": "Block",
+              "src": "396:497:13",
+              "statements": [
+                {
+                  "assignments": [
+                    1456
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1456,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1501,
+                      "src": "407:12:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1455,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "407:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1459,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1457,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "422:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1458,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "407:24:13"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    },
+                    "id": 1463,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1460,
+                      "name": "round",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1456,
+                      "src": "446:5:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1461,
+                        "name": "Rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1539,
+                        "src": "455:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                          "typeString": "type(enum Tierline.Rounds)"
+                        }
+                      },
+                      "id": 1462,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "preICO",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "455:13:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      }
+                    },
+                    "src": "446:22:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "id": 1470,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 1467,
+                        "name": "round",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1456,
+                        "src": "532:5:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1468,
+                          "name": "Rounds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1539,
+                          "src": "541:6:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                            "typeString": "type(enum Tierline.Rounds)"
+                          }
+                        },
+                        "id": 1469,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "ICORound1",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "541:16:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "src": "532:25:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "condition": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1477,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1474,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1456,
+                          "src": "623:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1475,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "632:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1476,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "ICORound2",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "632:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "623:25:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "falseBody": {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          },
+                          "id": 1484,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 1481,
+                            "name": "round",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1456,
+                            "src": "714:5:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1482,
+                              "name": "Rounds",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1539,
+                              "src": "723:6:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                "typeString": "type(enum Tierline.Rounds)"
+                              }
+                            },
+                            "id": 1483,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberName": "ICORound3",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "723:16:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            }
+                          },
+                          "src": "714:25:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "condition": {
+                            "argumentTypes": null,
+                            "commonType": {
+                              "typeIdentifier": "t_enum$_Rounds_$1539",
+                              "typeString": "enum Tierline.Rounds"
+                            },
+                            "id": 1491,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "argumentTypes": null,
+                              "id": 1488,
+                              "name": "round",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1456,
+                              "src": "805:5:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "==",
+                            "rightExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1489,
+                                "name": "Rounds",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1539,
+                                "src": "814:6:13",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                                  "typeString": "type(enum Tierline.Rounds)"
+                                }
+                              },
+                              "id": 1490,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "ICORound4",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "814:16:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Rounds_$1539",
+                                "typeString": "enum Tierline.Rounds"
+                              }
+                            },
+                            "src": "805:25:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "falseBody": null,
+                          "id": 1495,
+                          "nodeType": "IfStatement",
+                          "src": "801:85:13",
+                          "trueBody": {
+                            "id": 1494,
+                            "nodeType": "Block",
+                            "src": "832:54:13",
+                            "statements": [
+                              {
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 1492,
+                                  "name": "ICOTier4tokensPerETH",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1448,
+                                  "src": "854:20:13",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "functionReturnParameters": 1454,
+                                "id": 1493,
+                                "nodeType": "Return",
+                                "src": "847:27:13"
+                              }
+                            ]
+                          }
+                        },
+                        "id": 1496,
+                        "nodeType": "IfStatement",
+                        "src": "710:176:13",
+                        "trueBody": {
+                          "id": 1487,
+                          "nodeType": "Block",
+                          "src": "741:54:13",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 1485,
+                                "name": "ICOTier3tokensPerETH",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1446,
+                                "src": "763:20:13",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "functionReturnParameters": 1454,
+                              "id": 1486,
+                              "nodeType": "Return",
+                              "src": "756:27:13"
+                            }
+                          ]
+                        }
+                      },
+                      "id": 1497,
+                      "nodeType": "IfStatement",
+                      "src": "619:267:13",
+                      "trueBody": {
+                        "id": 1480,
+                        "nodeType": "Block",
+                        "src": "650:54:13",
+                        "statements": [
+                          {
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1478,
+                              "name": "ICOTier2tokensPerETH",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1444,
+                              "src": "672:20:13",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "functionReturnParameters": 1454,
+                            "id": 1479,
+                            "nodeType": "Return",
+                            "src": "665:27:13"
+                          }
+                        ]
+                      }
+                    },
+                    "id": 1498,
+                    "nodeType": "IfStatement",
+                    "src": "528:358:13",
+                    "trueBody": {
+                      "id": 1473,
+                      "nodeType": "Block",
+                      "src": "559:54:13",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1471,
+                            "name": "ICOTier1tokensPerETH",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1442,
+                            "src": "581:20:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 1454,
+                          "id": 1472,
+                          "nodeType": "Return",
+                          "src": "574:27:13"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 1499,
+                  "nodeType": "IfStatement",
+                  "src": "442:444:13",
+                  "trueBody": {
+                    "id": 1466,
+                    "nodeType": "Block",
+                    "src": "470:52:13",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 1464,
+                          "name": "preICOtokensPerETH",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1440,
+                          "src": "492:18:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 1454,
+                        "id": 1465,
+                        "nodeType": "Return",
+                        "src": "485:25:13"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1501,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1451,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1450,
+                  "name": "purchaseAllowed",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1524,
+                  "src": "350:15:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "350:15:13"
+              }
+            ],
+            "name": "getTokensPerETH",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1449,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "317:2:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1453,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1501,
+                  "src": "381:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1452,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "380:9:13"
+            },
+            "scope": 1525,
+            "src": "293:600:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1523,
+              "nodeType": "Block",
+              "src": "928:148:13",
+              "statements": [
+                {
+                  "assignments": [
+                    1504
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1504,
+                      "name": "round",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1524,
+                      "src": "939:12:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Rounds_$1539",
+                        "typeString": "enum Tierline.Rounds"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 1503,
+                        "name": "Rounds",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1539,
+                        "src": "939:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1507,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 1505,
+                      "name": "getTier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1604,
+                      "src": "954:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_Rounds_$1539_$",
+                        "typeString": "function () view returns (enum Tierline.Rounds)"
+                      }
+                    },
+                    "id": 1506,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "954:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Rounds_$1539",
+                      "typeString": "enum Tierline.Rounds"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "939:24:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1512,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1509,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1504,
+                          "src": "982:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1510,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "991:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1511,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "preWhitelist",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "991:19:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "982:28:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 1508,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3234,
+                        3235
+                      ],
+                      "referencedDeclaration": 3234,
+                      "src": "974:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 1513,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "974:37:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1514,
+                  "nodeType": "ExpressionStatement",
+                  "src": "974:37:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_Rounds_$1539",
+                          "typeString": "enum Tierline.Rounds"
+                        },
+                        "id": 1519,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1516,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1504,
+                          "src": "1030:5:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1517,
+                            "name": "Rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1539,
+                            "src": "1039:6:13",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_Rounds_$1539_$",
+                              "typeString": "type(enum Tierline.Rounds)"
+                            }
+                          },
+                          "id": 1518,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "Whitelist",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1039:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Rounds_$1539",
+                            "typeString": "enum Tierline.Rounds"
+                          }
+                        },
+                        "src": "1030:25:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 1515,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3234,
+                        3235
+                      ],
+                      "referencedDeclaration": 3234,
+                      "src": "1022:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 1520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1022:34:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1521,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1022:34:13"
+                },
+                {
+                  "id": 1522,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1067:1:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1524,
+            "name": "purchaseAllowed",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 1502,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "925:2:13"
+            },
+            "src": "901:175:13",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1526,
+        "src": "56:1023:13"
+      }
+    ],
+    "src": "0:1079:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-29T10:45:28.287Z"
+}

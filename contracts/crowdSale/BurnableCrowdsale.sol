@@ -4,14 +4,16 @@ import "./BasicCrowdsale.sol";
 
 /**
  * @title BurnableCrowdsale
- * @dev 
+ * @dev BurnableCrowdsale inherits BasicCrowdsale and is intended to manage burning tokens.
  */
 contract BurnableCrowdsale is BasicCrowdsale {
     event Burned(address _burner, address _burnedFrom, uint256 _burnAmount);
 
     /**
-    * @dev 
-    * @param
+    * @dev Burns an amount of tokens only by owner. Reduces total amount of tokens
+    * and the balances of msg.sender i.e owner.
+    * @param _burnAmount Amount tokens supposed to be burnt.
+    * @note Only owner is allowed to burn tokens.
     */
     function burnTokens(uint256 _burnAmount) public onlyOwner {
         token.Burn(_burnAmount);

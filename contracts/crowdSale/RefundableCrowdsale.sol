@@ -4,15 +4,17 @@ import "./FinalizableCrowdsale.sol";
 
 /**
  * @title RefundableCrowdsale
- * @dev 
+ * @dev RefundableCrowdsale inherits FinalizableCrowdsale and intended to manage Refunding process.
  */
 contract RefundableCrowdsale is FinalizableCrowdsale {
     
     event Refunded(address _investor, uint256 _depositedValue);
     
     /**
-    * @dev 
-    * @param
+    * @dev Refunds the investing ETHERs back to participants.
+    * @param _investor Address of investor supposed to be refunded.
+    * @note Refunding process would be occured if the desired softcap is not reached and 
+    * the owner finalizes the crowdsale after its ending.
     */
     function refund(address _investor) public {
         require(isFinalized);

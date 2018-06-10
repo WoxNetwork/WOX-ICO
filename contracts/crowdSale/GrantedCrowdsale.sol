@@ -6,7 +6,8 @@ import "../whitelist/whitelist.sol";
 
 /**
  * @title GrantedCrowdsale
- * @dev 
+ * @dev GrantedCrowdsale inherits BasicCrowdsale and intended to manage whitelist process
+ * od Grantees and funding them.
  */
 contract GrantedCrowdsale is BasicCrowdsale {
     using whitelist for whitelist.Whitelist;
@@ -22,32 +23,42 @@ contract GrantedCrowdsale is BasicCrowdsale {
     event TokenGranted(address indexed sender, address indexed grantee, uint256 amount);
 
     /**
-    * @dev 
-    * @param
+    * @dev Adds a new Grantee to the whitelist.
+    * @param _grantee Address of grantee must be added into whitelist.
+    * This action is only allowed in pre-Whitelist and Whitelist Tiers.
     */
     function addToGrantees(address _grantee) public whitelistingAllowed onlyOwner {
         Grantees.add(_grantee);
     }
 
     /**
-    * @dev 
-    * @param
+    * @dev Removes a passed granteed address from whitelist.
+    * @param _grantee Address of grantee must be removed from whitelist.
+    * This action is allowed only in pre-Whitelist and Whitelist Rounds.
     */
     function removeFromGrantees(address _grantee) public whitelistingAllowed onlyOwner {
         Grantees.remove(_grantee);
     }
 
     /**
-    * @dev 
-    * @param
+    * @dev Checks if a specified address is whitelisted as grantee.
+    * @param _grantee Address must be evaluated whether has been whitelisted or not.
+    * @return A bool showing the passed Address is whitelisted or not.
     */
     function whitelistedAsGrantee(address _grantee) public view returns (bool) {
         return Grantees.has(_grantee);
     }
 
     /**
-    * @dev 
-    * @param
+    * @dev Grants an amount of tokens to a passed whitelisted grantee.
+    * @param _grantee The address of a whitelisted grnatee supposed to be granted.
+    * @param _tokenAmount The amount of tokens must be granted.
+    * @note This action is allowed in Grant Time.
+    * @note Only whitelisted Grantee could be granted.
+    * @note Only the ICO Owner is allowed to grant tokens.
+    * @note Tokens are transfered in locked mode i.e tokens would be freed after a specified period of time.
+    * @note 30% of granted tokens would be freed after crowdsale is ended.
+    * @note 70% of granted tokens would be freed 365 days after ending date of the crowdsale.
     */
     function grantTokens(address _grantee, uint256 _tokenAmount)
     public
@@ -69,8 +80,8 @@ contract GrantedCrowdsale is BasicCrowdsale {
     }
 
     /**
-    * @dev 
-    * @param
+    * @dev A modifier requires a specified address is whitelisted as grantee.
+    * @param _vc The address of Grantee must be checked.
     */
     modifier onlyGrantee(address _grantee) {
         require(whitelistedAsGrantee(_grantee));
@@ -78,8 +89,8 @@ contract GrantedCrowdsale is BasicCrowdsale {
     }
 
     /**
-    * @dev 
-    * @param
+    * @dev A modifier requires an action to be measured in Grant Time i.e. 
+    * immediately after pre-ICO round is ended, but before the ending od ICO corwdsale.
     */
     modifier onlyGrantTime() {
         require(hasOpened());

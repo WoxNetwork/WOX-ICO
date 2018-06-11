@@ -118,18 +118,19 @@ When the last ICO Round reached to the end, the crowdsale would immediately clos
 
 The below table briefly explains ICO Rounds and features:
 
-|Round        | pre-Whitelist | Pre-ICO  | Whitelist |  ICO-1   |  ICO-2   |  ICO-3   |  ICO-4   |  Closed  |
-|------------:|--------------:|---------:|----------:|---------:|---------:|---------:|---------:|---------:|
-|Price        |               | 0.08 USD |           | 0.12 USD | 0.13 USD | 0.14 USD | 0.15 USD |          |
-|Hardcap      |               | 120M     |           | 125M     | 125M     | 125M     | 125M     |          |
-|Whitelist    | A             | NA       | A         | NA       | NA       | NA       | NA       | NA       |
-|purchase     | NA            | Private  | NA        | Public   | Public   | Public   | Public   | NA       |
-|Granting     | NA            | NA       | A         | A        | A        | A        | A        | NA       |
-|Referral     | NA            | A        | NA        | A        | A        | A        | A        | NA       |
-|Burning      | A             | A        | A         | A        | A        | A        | A        | A        |
-|Finalization | NA            | NA       | NA        | NA       | NA       | NA       | NA       | A        |
-|Refunding    | NA            | NA       | NA        | NA       | NA       | NA       | NA       | A        |
-|Withdrawal   | A             | A        | A         | A        | A        | A        | A        | A |      
+|Round        | pre-Whitelist | Pre-ICO  | Whitelist |  ICO-1      |  ICO-2      |  ICO-3      |  ICO-4      |  Closed  |
+|------------:|--------------:|---------:|----------:|------------:|------------:|------------:|------------:|---------:|
+|Price        |               | 0.08 USD |           | 0.12 USD    | 0.13 USD    | 0.14 USD    | 0.15 USD    |          |
+|Hardcap      |               | 120M     |           | 125M        | 125M        | 125M        | 125M        |          |
+|Invest Limit |               | 50K USD  |           | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH |          |
+|Whitelist    | A             | NA       | A         | NA          | NA          | NA          | NA          | NA       |
+|purchase     | NA            | Private  | NA        | Public      | Public      | Public      | Public      | NA       |
+|Granting     | NA            | NA       | A         | A           | A           | A           | A           | NA       |
+|Referral     | NA            | A        | NA        | A           | A           | A           | A           | NA       |
+|Burning      | A             | A        | A         | A           | A           | A           | A           | A        |
+|Finalization | NA            | NA       | NA        | NA          | NA          | NA          | NA          | A        |
+|Refunding    | NA            | NA       | NA        | NA          | NA          | NA          | NA          | A        |
+|Withdrawal   | A             | A        | A         | A           | A           | A           | A           | A        |      
 
 
 

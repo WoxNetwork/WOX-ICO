@@ -33,7 +33,7 @@ This is a bran-new facility which ables token senders to conditionaly transfer t
 
 ## Token Burning
 
-Every token owner has the possibility to burn any amount of his/her tokens.
+Every token owner has the possibility to burn any amount of his/her tokens. Token burning causes reduction in total token supply too.
 
 # WOX Crowdsale Explained
 

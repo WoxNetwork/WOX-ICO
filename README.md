@@ -11,6 +11,24 @@ tokens being transfered to contracts not supporting token transactions and conse
 
 WOX Crowdsale is intended to manage the Crowdsale of WOX Tokens in an ICO event. It's promised to handle different ICO Rounds with specified features. WOX Crowdsale is equipped to support a vast variety of functionalities such as Public and Private Investors, Refundable Invest, Refferral Paiment, Burnable Token and Granting Supporters.
 
+# WOX Crowdsale Explained
+
+WOX Crowdsale includes different parameters, features, roles, processes, etc.
+
+## Administration
+
+The WOX Crowdsale has an owner (Administrator) with special authorities:
+
+- Deployer of the Contract
+- Initial Owner of Tokens
+- Whitelisting VCs
+- Whitelisting Grantees
+- Granting Tokens
+- Referral Payment
+- Crowdsale Finalization
+- Fund Withdrawal
+- Burning Tokens
+
 
 
 

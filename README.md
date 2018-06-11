@@ -65,9 +65,9 @@ However Granted tokens are transfered by LTT (Locked Token Transfer) Mechanism. 
 Tokens are sold at different rates of ETHER determined by an Staged Pricing Mechanism. The followingtable shows token prices in USD at different Rounds:
 
 
-                |Round| Pre-ICO  |  ICO-1   |  ICO-2   |  ICO-3   |  ICO-4   |
-                |----:|---------:|---------:|---------:|---------:|---------:|
-                |Price| 0.08 USD | 0.12 USD | 0.13 USD | 0.14 USD | 0.15 USD |
+|Round| Pre-ICO  |  ICO-1   |  ICO-2   |  ICO-3   |  ICO-4   |
+|----:|---------:|---------:|---------:|---------:|---------:|
+|Price| 0.08 USD | 0.12 USD | 0.13 USD | 0.14 USD | 0.15 USD |
 
 However, the ETHER prices of WOX Tokens are computed at deployment point based on the above table and USD-ETH rate. The ETHER prices would not change then after.
 

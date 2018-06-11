@@ -116,4 +116,3 @@ When the last ICO Round reached to the end, the crowdsale would immediately clos
 
 Below is a graphical view of the WOX Crowdsale timeline.
 
-![timeline](./timeline.jpg)

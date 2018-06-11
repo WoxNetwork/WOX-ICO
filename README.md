@@ -122,7 +122,7 @@ The below table briefly explains ICO Rounds and features:
 |------------:|--------------:|---------:|----------:|------------:|------------:|------------:|------------:|---------:|
 |Price        |               | 0.08 USD |           | 0.12 USD    | 0.13 USD    | 0.14 USD    | 0.15 USD    |          |
 |Hardcap      |               | 120M     |           | 125M        | 125M        | 125M        | 125M        |          |
-|Invest Limit |               | 50K USD  |           | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH |          |
+|Invest Limit |               | >50K USD |           | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH | 0.1-300 ETH |          |
 |Whitelist    | A             | NA       | A         | NA          | NA          | NA          | NA          | NA       |
 |purchase     | NA            | Private  | NA        | Public      | Public      | Public      | Public      | NA       |
 |Granting     | NA            | NA       | A         | A           | A           | A           | A           | NA       |

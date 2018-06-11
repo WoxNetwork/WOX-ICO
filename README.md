@@ -47,12 +47,39 @@ The Owner has the authority to withdraw the funds acquired at any time. At the e
 
 ## Participants and Beneficiaries
 
-Everyone can participate in crowdsale to invest on WOX Tokens and purchasing them. However Venture Capitalists (VC) has the chance to purchase tokens cheaper but bigger. As mentioned, Private Investors should be whitelisted in pre-Whitelist Round by the Owner in order that they would be permitted to purchase tokens at pre-ICO Round. Note that the tokens being sold at this Round are cheaper but the participant must purchase a large portion (at least 50K of USD).
+Everyone can participate in crowdsale to invest on WOX Tokens and purchasing them. However Venture Capitalists (VC) has the chance to purchase tokens cheaper but bigger. As mentioned, Private Investors should be whitelisted in pre-Whitelist Round by the Owner in order that they would be permitted to purchase tokens at pre-ICO Round. Note that the tokens being sold at this Round are cheaper but the participant must purchase a large portion (at least 50K of USD). VCs Whitelisted in the Whitelist Round can participate in ICO Rounds.
 
 Public contributors who don't want to purchase a large portion of tokens, can buy tokens at 4 ICO Rounds at higher prices.
 
-## Grantess
+## Grantees
 
 Team Developers and Advisors are granted by tokens. Tokens are grantable only after pre-ICO Round is reached to end. Crowdsale Owner is the only authority that can grant tokens. Take into consideration that Grantees must be whitelisted by the Owner in pre-Whitelist or Whitelist Rounds in order to receive grants.
 However Granted tokens are transfered by LTT (Locked Token Transfer) Mechanism. Consequently 30% of granted tokens are freed after crowdsale ending while 365 days later the 70% remaining tokens would be freed.
 
+## Referrals
+
+30 Millions of WOX Tokens are assigned to be distributed amonggst Referrers by the Owner. Referral Token distribution is only allowed at pre-ICO and ICO Rounds.
+
+## Staged Pricing
+
+Tokens are sold at different rates of ETHER determined by an Staged Pricing Mechanism. The followingtable shows token prices in USD at different Rounds:
+
+
+|Round| Pre-ICO  |  ICO-1   |  ICO-2   |  ICO-3   |  ICO-4   |
+|----:|---------:|---------:|---------:|---------:|---------:|
+|Price| 0.08 USD | 0.12 USD | 0.13 USD | 0.14 USD | 0.15 USD |
+
+However, the ETHER prices of WOX Tokens are computed at deployment point based on the above table and USD-ETH rate. The ETHER prices would not change then after.
+
+
+## Caps
+
+Wox Token contains 1 Billion Tokens as total supply. However, 120 Million of WOX Tokens are considered as pre-ICO hardcap which are intended to be purchased by Whitelisted VCs. Besides, 500 Million tokens would be sold in 4 ICO Rounds, 125 Million Tokens per each, at different staged prices. That should be mentioned that the unsold remaining tokens at each Round will be added to the hardacp of next Rounds.
+
+## Burning Tokens
+
+## Fund Withdrawal
+
+All raised funds could be withdrawn by the Owner at any time unlimitedly.
+
+## 

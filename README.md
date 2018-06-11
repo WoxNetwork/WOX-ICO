@@ -11,6 +11,30 @@ tokens being transfered to contracts not supporting token transactions and conse
 
 WOX Crowdsale is intended to manage the Crowdsale of WOX Tokens in an ICO event. It's promised to handle different ICO Rounds with specified features. WOX Crowdsale is equipped to support a vast variety of functionalities such as Public and Private Investors, Refundable Invest, Refferral Paiment, Burnable Token and Granting Supporters.
 
+# WOX Token Explained
+
+As mentioned WOX Token is based on ERC223 Token. Consequently, it's completely compatible with ERC20 Tokens but safer. Furthermore the contract is named "WOX.Network" with the symbol name of "WOX". Total Supply of the Token contract is 1 Billion WOX Tokens diplayed with 18 decimals.
+
+There are 3 ways to transfer tokens from an address to another one:
+
+## 1- Transfer methods
+
+In this way the Message Sender demands to transfer an amount of tokens from his/her balance to a specified address. The source and destination addresses could be a contract or EOA (Externally Owned Account). 
+
+In contrary to ERC20 Tokens if the destination contract doesn't support token transfer, the transaction would be reverted in order to preventiong form token lost. The contract should contain a fallback function named "tokenFallback" which accepts tokens. It's also possible for contracts to have such falback functions with any arbitrary names. In this case, the function interface should be passed too.
+
+## 2- Approval method
+
+Ones can also firstly approve an amount of tokens to a specified address in order that the receiver can then transfer that tokens to any address with all considerations mentioned above.
+
+## 3- Locked Token Transfer method
+
+This is a bran-new facility which ables token senders to conditionaly transfer tokens to any address with all considerations mentioned for contract receivers. A condition actually is a Lock Time means the tokens would be freed only after a period of time. Whenever the Lock Time expires, since then the ownr can spend tokens.
+
+## Token Burning
+
+Every token owner has the possibility to burn any amount of his/her tokens.
+
 # WOX Crowdsale Explained
 
 WOX Crowdsale includes different parameters, features, roles, processes, etc.

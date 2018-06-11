@@ -132,8 +132,7 @@ The below table briefly explains ICO Rounds and features:
 |Refunding    | NA            | NA       | NA        | NA          | NA          | NA          | NA          | A        |
 |Withdrawal   | A             | A        | A         | A           | A           | A           | A           | A        |      
 
-
-
+-------------------
 
 Below is a graphical view of the WOX Crowdsale timeline.
 

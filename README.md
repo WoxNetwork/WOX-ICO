@@ -35,7 +35,7 @@ When the contract is deployed to ethereum blockchain the deployer of the contrac
 
 WOX Crowdsale Owner is the only person who can add/remove VCs and Grantees to/from whitelists, also the only one is able to grant tokens to supporters.
 
-**Note**: Whitelisting is only allowed in pre-Whitelist and Whitelist Round.
+**Note**: Whitelisting is only allowed in pre-Whitelist and Whitelist Rounds.
 
 **Note**: Granting tokens is only allowed immediately after pre-ICO and before ICO ending.
 
@@ -43,5 +43,5 @@ Referrers are paid tokens by the Owner in pre-ICO and ICO Rounds.
 
 **Note**: Token Referral Payment is not allowed in pre-Whitelist or Whitelist Rounds.
 
-
+The Owner has the authority to withdraw the funds acquired at any time. At the end of the crowdsale owner can finalize the crowdsale. If the desired goal is reached the remaining funds in the contract will be transfered to a specified wallet, otherwise the crowdsale will enter the Refunding phase, every investor can refund deposited values. Finally Burning unsold tokens can only be done by Owner.
 

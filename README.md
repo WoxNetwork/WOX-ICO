@@ -74,12 +74,18 @@ However, the ETHER prices of WOX Tokens are computed at deployment point based o
 
 ## Caps
 
-Wox Token contains 1 Billion Tokens as total supply. However, 120 Million of WOX Tokens are considered as pre-ICO hardcap which are intended to be purchased by Whitelisted VCs. Besides, 500 Million tokens would be sold in 4 ICO Rounds, 125 Million Tokens per each, at different staged prices. That should be mentioned that the unsold remaining tokens at each Round will be added to the hardacp of next Rounds.
+Wox Token contains 1 Billion Tokens as total supply. However, 120 Million of WOX Tokens are considered as pre-ICO hardcap which are intended to be purchased by Whitelisted VCs. Besides, 500 Million tokens would be sold in 4 ICO Rounds, 125 Million Tokens per each, at different staged prices. That should be mentioned that the unsold remaining tokens at each Round will be added to the hardacp of next Rounds. In addition, 30 Million WOX Tokens are intended to be distributed as Referrals. Remaining Tokens would be granted or retained by contract.
+
+Besides, 3 Million USD is considered as desired softcap. The goal would be reached if at least this fund raises. Otherwise, Owner would finalize the crowdsale and values deposited by investors would be refunded.
 
 ## Burning Tokens
+
+Crowdsale Owner is able to unlimitedly burn tokens at anytime.
 
 ## Fund Withdrawal
 
 All raised funds could be withdrawn by the Owner at any time unlimitedly.
 
-## 
+## Finalization
+
+When the last ICO Round reached to the end, the crowdsale would immediately closed and Owner should finalize the crowdsale. If goal is reached the raised funds will be automatically transfered to the wallet specified by the Owner. Otherwise, crowdsale would enter Refunding state and every investor can demands his/her values to be refunded.

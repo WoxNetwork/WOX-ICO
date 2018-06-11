@@ -29,7 +29,19 @@ The WOX Crowdsale has an owner (Administrator) with special authorities:
 - Fund Withdrawal
 - Burning Tokens
 
+When the contract is deployed to ethereum blockchain the deployer of the contract is recognized as the Contract Owner. At the begining all of the tokens are belonged to the Owner. 
 
+**Note**: In order that the contract can sell the tokens, the Owner should transfer enough tokens to the Crowdsale contract.
+
+WOX Crowdsale Owner is the only person who can add/remove VCs and Grantees to/from whitelists, also the only one is able to grant tokens to supporters.
+
+**Note**: Whitelisting is only allowed in pre-Whitelist and Whitelist Round.
+
+**Note**: Granting tokens is only allowed immediately after pre-ICO and before ICO ending.
+
+Referrers are paid tokens by the Owner in pre-ICO and ICO Rounds.
+
+**Note**: Token Referral Payment is not allowed in pre-Whitelist or Whitelist Rounds.
 
 
 

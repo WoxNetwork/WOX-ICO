@@ -98,7 +98,7 @@ However, the ETHER prices of WOX Tokens are computed at deployment point based o
 
 ## Caps
 
-Wox Token contains 1 Billion Tokens as total supply. However, 120 Million of WOX Tokens are considered as pre-ICO hardcap which are intended to be purchased by Whitelisted VCs. Besides, 500 Million tokens would be sold in 4 ICO Rounds, 125 Million Tokens per each, at different staged prices. That should be mentioned that the unsold remaining tokens at each Round will be added to the hardacp of next Rounds. In addition, 18.75 Million WOX Tokens are intended to be distributed as Referrals. Remaining Tokens would be granted or retained by contract.
+Wox Token contains 1 Billion Tokens as total supply. However, 120 Million of WOX Tokens are considered as pre-ICO hardcap which are intended to be purchased by Whitelisted VCs. Besides, 500 Million tokens would be sold in 4 ICO Rounds, 125 Million Tokens per each, at different staged prices. That should be mentioned that the unsold remaining tokens at each Round will be added to the hardacp of next Rounds. In addition, 18.6 Million WOX Tokens are intended to be distributed as Referrals. Remaining Tokens would be granted or retained by contract.
 
 Besides, 3 Million USD is considered as desired softcap. The goal would be reached if at least this fund raises. Otherwise, Owner would finalize the crowdsale and values deposited by investors would be refunded.
 

@@ -59,7 +59,7 @@ contract WOXCrowdsale is
          * @param MaxRefferalTokens Only 30 Million Tokens are allowed to be paid as Refferals.
          */
         softcapWei = uint256(3e6).mul(1 ether).div(USD_PER_ETH);
-        MaxReferralTokens = uint256(625e6).mul(10 ** decimals).mul(3).div(100);
+        MaxReferralTokens = uint256(620e6).mul(10 ** decimals).mul(3).div(100);
 
         /**
          * @dev Investing limitations:

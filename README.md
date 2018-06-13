@@ -82,7 +82,7 @@ However Granted tokens are transfered by LTT (Locked Token Transfer) Mechanism. 
 
 ## Referrals
 
-30 Millions of WOX Tokens are assigned to be distributed amonggst Referrers by the Owner. Referral Token distribution is only allowed at pre-ICO and ICO Rounds.
+18.6 Millions of WOX Tokens are assigned to be distributed amonggst Referrers by the Owner. Referral Token distribution is only allowed at pre-ICO and ICO Rounds.
 
 ## Staged Pricing
 

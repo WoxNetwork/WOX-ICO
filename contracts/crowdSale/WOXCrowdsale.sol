@@ -176,4 +176,24 @@ contract WOXCrowdsale is
             uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(15), 
             true);
     }
+
+    /**
+     *@dev Updates Prices. It updates USD_PER_ETH and all related parameters.
+     *@note Only owner can update prices.
+     *@param _usd_eth New USD to ETHER rate. (amount of USD per 1 ETHER).
+     */
+    function updatePricing(uint256 _usd_eth) public onlyOwner {
+        require(_usd_eth > 0);
+
+        USD_PER_ETH = _usd_eth;
+        softcapWei = uint256(3e6).mul(1 ether).div(USD_PER_ETH);
+        minVestingWeiPreICO = uint256(50e3).mul(1 ether).div(USD_PER_ETH);
+        maxVestingWeiPreICO = uint256(1e6).mul(1 ether).div(USD_PER_ETH); //// ?????
+
+        Tiers[1].tokenWeisPerEth = uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(8);
+        Tiers[3].tokenWeisPerEth = uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(12);
+        Tiers[4].tokenWeisPerEth = uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(13);
+        Tiers[5].tokenWeisPerEth = uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(14);
+        Tiers[6].tokenWeisPerEth = uint256(USD_PER_ETH).mul(10 ** decimals).mul(100).div(15);
+    }
 }

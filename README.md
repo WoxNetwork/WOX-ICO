@@ -114,6 +114,10 @@ All raised funds could be withdrawn by the Owner at any time unlimitedly.
 
 When the last ICO Round reached to the end, the crowdsale would immediately closed and Owner should finalize the crowdsale. If goal is reached the raised funds will be automatically transfered to the wallet specified by the Owner. Otherwise, crowdsale would enter Refunding state and every investor can demands his/her values to be refunded.
 
+## Update Pricing
+
+As the ETH/USD rate fluctuates rapidly, Update Pricing function is provided in order that Only Owner would be able to update this rate and consequently all relevant parameters would be modified. These parameters are: Minimum and Maximum Investing in Pre ICO, Softacp and Token prices, all in ETHER unit.
+
 ## Summery
 
 The below table briefly explains ICO Rounds and features:

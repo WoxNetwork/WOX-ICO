@@ -23,12 +23,12 @@ contract WOXCrowdsale is
 {
     
     /**
-    * @dev Initiates parameters of crowdsale.
-    * @param _cliff determines the cliff time between contract deployment an ICO opening time.
-    * @param _USD_PER_ETH USD to ETHER rate. (amount of USD per 1 ETHER).
-    * @param _wallet Wallet address to which funds will be depositted to after goal reached.
-    * @param _tokenAddress WOX Token contract address.
-    */
+     * @dev Initiates parameters of crowdsale.
+     * @param _cliff determines the cliff time between contract deployment an ICO opening time.
+     * @param _USD_PER_ETH USD to ETHER rate. (amount of USD per 1 ETHER).
+     * @param _wallet Wallet address to which funds will be depositted to after goal reached.
+     * @param _tokenAddress WOX Token contract address.
+     */
     constructor(
         uint256 _cliff,
         uint256 _USD_PER_ETH,
@@ -179,7 +179,7 @@ contract WOXCrowdsale is
 
     /**
      *@dev Updates Prices. It updates USD_PER_ETH and all related parameters.
-     *@note Only owner can update prices.
+     *@dev note Only owner can update prices.
      *@param _usd_eth New USD to ETHER rate. (amount of USD per 1 ETHER).
      */
     function updatePricing(uint256 _usd_eth) public onlyOwner {

@@ -8,24 +8,24 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6080604052348015600f57600080fd5b506000808190555060358060246000396000f3006080604052600080fd00a165627a7a723058204028cd0f9d0cd65d106f6d94d66d2b6d914ec2693dd3504bea79840d475fc88b0029",
-  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058204028cd0f9d0cd65d106f6d94d66d2b6d914ec2693dd3504bea79840d475fc88b0029",
-  "sourceMap": "28:109:22:-;;;84:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:50:22;122:1;116:3;:7;;;;28:109;;;;;;",
-  "deployedSourceMap": "28:109:22:-;;;;;",
+  "bytecode": "0x6080604052348015600f57600080fd5b506000808190555060358060246000396000f3006080604052600080fd00a165627a7a7230582083af59ab7f215ef6edeedb095c6eab8cd0d1c33f5dfc3f152409cbb26b39ec330029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582083af59ab7f215ef6edeedb095c6eab8cd0d1c33f5dfc3f152409cbb26b39ec330029",
+  "sourceMap": "28:109:24:-;;;84:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:50:24;122:1;116:3;:7;;;;28:109;;;;;;",
+  "deployedSourceMap": "28:109:24:-;;;;;",
   "source": "pragma solidity ^0.4.23;\r\n\r\ncontract nonfallbackedReceiver {\r\n    uint256 val;\r\n    constructor() public {\r\n        val = 0;   \r\n    }\r\n}",
-  "sourcePath": "G:\\Root\\Blockchain\\BAX\\contracts\\test\\nonfallbackedReceiver.sol",
+  "sourcePath": "G:\\Root\\Blockchain\\WOX\\contracts\\test\\nonfallbackedReceiver.sol",
   "ast": {
-    "absolutePath": "/G/Root/Blockchain/BAX/contracts/test/nonfallbackedReceiver.sol",
+    "absolutePath": "/G/Root/Blockchain/WOX/contracts/test/nonfallbackedReceiver.sol",
     "exportedSymbols": {
       "nonfallbackedReceiver": [
-        3646
+        4568
       ]
     },
-    "id": 3647,
+    "id": 4569,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3635,
+        "id": 4557,
         "literals": [
           "solidity",
           "^",
@@ -33,7 +33,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:22"
+        "src": "0:24:24"
       },
       {
         "baseContracts": [],
@@ -41,20 +41,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3646,
+        "id": 4568,
         "linearizedBaseContracts": [
-          3646
+          4568
         ],
         "name": "nonfallbackedReceiver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3637,
+            "id": 4559,
             "name": "val",
             "nodeType": "VariableDeclaration",
-            "scope": 3646,
-            "src": "66:11:22",
+            "scope": 4568,
+            "src": "66:11:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -62,10 +62,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3636,
+              "id": 4558,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "66:7:22",
+              "src": "66:7:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -76,26 +76,26 @@
           },
           {
             "body": {
-              "id": 3644,
+              "id": 4566,
               "nodeType": "Block",
-              "src": "105:29:22",
+              "src": "105:29:24",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3642,
+                    "id": 4564,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3640,
+                      "id": 4562,
                       "name": "val",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3637,
-                      "src": "116:3:22",
+                      "referencedDeclaration": 4559,
+                      "src": "116:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -106,14 +106,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 3641,
+                      "id": 4563,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "122:1:22",
+                      "src": "122:1:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -121,20 +121,20 @@
                       },
                       "value": "0"
                     },
-                    "src": "116:7:22",
+                    "src": "116:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3643,
+                  "id": 4565,
                   "nodeType": "ExpressionStatement",
-                  "src": "116:7:22"
+                  "src": "116:7:24"
                 }
               ]
             },
             "documentation": null,
-            "id": 3645,
+            "id": 4567,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -142,43 +142,43 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3638,
+              "id": 4560,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "95:2:22"
+              "src": "95:2:24"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3639,
+              "id": 4561,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "105:0:22"
+              "src": "105:0:24"
             },
-            "scope": 3646,
-            "src": "84:50:22",
+            "scope": 4568,
+            "src": "84:50:24",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3647,
-        "src": "28:109:22"
+        "scope": 4569,
+        "src": "28:109:24"
       }
     ],
-    "src": "0:137:22"
+    "src": "0:137:24"
   },
   "legacyAST": {
-    "absolutePath": "/G/Root/Blockchain/BAX/contracts/test/nonfallbackedReceiver.sol",
+    "absolutePath": "/G/Root/Blockchain/WOX/contracts/test/nonfallbackedReceiver.sol",
     "exportedSymbols": {
       "nonfallbackedReceiver": [
-        3646
+        4568
       ]
     },
-    "id": 3647,
+    "id": 4569,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3635,
+        "id": 4557,
         "literals": [
           "solidity",
           "^",
@@ -186,7 +186,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:22"
+        "src": "0:24:24"
       },
       {
         "baseContracts": [],
@@ -194,20 +194,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3646,
+        "id": 4568,
         "linearizedBaseContracts": [
-          3646
+          4568
         ],
         "name": "nonfallbackedReceiver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3637,
+            "id": 4559,
             "name": "val",
             "nodeType": "VariableDeclaration",
-            "scope": 3646,
-            "src": "66:11:22",
+            "scope": 4568,
+            "src": "66:11:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -215,10 +215,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3636,
+              "id": 4558,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "66:7:22",
+              "src": "66:7:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -229,26 +229,26 @@
           },
           {
             "body": {
-              "id": 3644,
+              "id": 4566,
               "nodeType": "Block",
-              "src": "105:29:22",
+              "src": "105:29:24",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3642,
+                    "id": 4564,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3640,
+                      "id": 4562,
                       "name": "val",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3637,
-                      "src": "116:3:22",
+                      "referencedDeclaration": 4559,
+                      "src": "116:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -259,14 +259,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 3641,
+                      "id": 4563,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "122:1:22",
+                      "src": "122:1:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -274,20 +274,20 @@
                       },
                       "value": "0"
                     },
-                    "src": "116:7:22",
+                    "src": "116:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3643,
+                  "id": 4565,
                   "nodeType": "ExpressionStatement",
-                  "src": "116:7:22"
+                  "src": "116:7:24"
                 }
               ]
             },
             "documentation": null,
-            "id": 3645,
+            "id": 4567,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -295,30 +295,30 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3638,
+              "id": 4560,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "95:2:22"
+              "src": "95:2:24"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3639,
+              "id": 4561,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "105:0:22"
+              "src": "105:0:24"
             },
-            "scope": 3646,
-            "src": "84:50:22",
+            "scope": 4568,
+            "src": "84:50:24",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3647,
-        "src": "28:109:22"
+        "scope": 4569,
+        "src": "28:109:24"
       }
     ],
-    "src": "0:137:22"
+    "src": "0:137:24"
   },
   "compiler": {
     "name": "solc",
@@ -326,5 +326,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-02T13:50:18.640Z"
+  "updatedAt": "2018-06-27T04:19:57.256Z"
 }

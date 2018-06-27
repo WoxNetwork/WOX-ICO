@@ -41,11 +41,11 @@ contract BasicCrowdsale is WhtielistedVC {
 
     event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
 
-   /**
-    * @dev low level token purchase.
-    * @param _beneficiary Address performs token purchase with ether. 
-    * Note: Token purchase only allowed while ICO is running in pre-ICO and ICO rounds.
-    */
+    /**
+     * @dev low level token purchase.
+     * @param _beneficiary Address performs token purchase with ether. 
+     * Note: Token purchase only allowed while ICO is running in pre-ICO and ICO rounds.
+     */
     function buyTokens(address _beneficiary) 
     public 
     payable
@@ -67,16 +67,16 @@ contract BasicCrowdsale is WhtielistedVC {
     }
 
     /**
-    * @dev Requirements for validation of token purchase.
-    * Note: At each round of ICO crowdsale only a limitted amount of tokens could be sold.
-    * Note: Each purchaser must buy a minimum and can buy a maximum amount of tokens.
-    * Note: Mentioned limitations depends on that round of ICO.
-    * Note: Only whitelisted VCs can purchase tokens in pre-ICO round.
-    * Note: Will revert on violation of required conditions.
-    * @param _beneficiary Address performing token purchase. 
-    * @param _weiAmount Value in wei paid for token purchase.
-    * @param _tokenAmount Number of tokens will be sold to purchase.
-    */
+     * @dev Requirements for validation of token purchase.
+     * Note: At each round of ICO crowdsale only a limitted amount of tokens could be sold.
+     * Note: Each purchaser must buy a minimum and can buy a maximum amount of tokens.
+     * Note: Mentioned limitations depends on that round of ICO.
+     * Note: Only whitelisted VCs can purchase tokens in pre-ICO round.
+     * Note: Will revert on violation of required conditions.
+     * @param _beneficiary Address performing token purchase. 
+     * @param _weiAmount Value in wei paid for token purchase.
+     * @param _tokenAmount Number of tokens will be sold to purchase.
+     */
     function _preValidatePurchase(address _beneficiary, uint256 _weiAmount, uint256 _tokenAmount) internal view {
         require(_beneficiary != address(0));
         require(_weiAmount != 0);
@@ -89,10 +89,10 @@ contract BasicCrowdsale is WhtielistedVC {
     }
 
     /**
-    * @dev Executes a validated token purchase.
-    * @param _beneficiary Address performing token purchase. 
-    * @param _tokenAmount Number of tokens will be sold to purchase.
-    */
+     * @dev Executes a validated token purchase.
+     * @param _beneficiary Address performing token purchase. 
+     * @param _tokenAmount Number of tokens will be sold to purchase.
+     */
     function _processPurchase(address _beneficiary, uint256 _tokenAmount) internal {
         token.transfer(_beneficiary, _tokenAmount);
     }

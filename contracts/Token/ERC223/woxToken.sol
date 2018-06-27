@@ -1,6 +1,7 @@
 pragma solidity ^0.4.23;
 
 import "./BurnableToken.sol";
+// import "../../ownership/Heritable.sol";
 
 /**
  * @title woxToken contract

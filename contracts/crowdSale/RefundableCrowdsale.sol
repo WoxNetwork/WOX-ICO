@@ -11,11 +11,11 @@ contract RefundableCrowdsale is FinalizableCrowdsale {
     event Refunded(address _investor, uint256 _depositedValue);
     
     /**
-    * @dev Refunds the investing ETHERs back to participants.
-    * @param _investor Address of investor supposed to be refunded.
-    * @note Refunding process would be occured if the desired softcap is not reached and 
-    * the owner finalizes the crowdsale after its ending.
-    */
+     * @dev Refunds the investing ETHERs back to participants.
+     * @param _investor Address of investor supposed to be refunded.
+     * @dev note Refunding process would be occured if the desired softcap is not reached and 
+     * the owner finalizes the crowdsale after its ending.
+     */
     function refund(address _investor) public {
         require(isFinalized);
         require(state == State.Refunding);

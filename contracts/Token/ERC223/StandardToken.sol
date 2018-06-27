@@ -225,7 +225,7 @@ contract StandardToken is ERC223, Ownable {
     /**
      * @dev Increases number of tokens approved by msg.sender to spender address.
      * @param _spender Address approved to spend the funds.
-     * @param _addedvalue Number of tokens to increase allowance.
+     * @param _addedValue Number of tokens to increase allowance.
      * @return A bool that shows success or failure of process.
      */
     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
@@ -238,7 +238,7 @@ contract StandardToken is ERC223, Ownable {
     /**
      * @dev Decreases number of tokens approved by msg.sender to spender address.
      * @param _spender Address approved to spend the funds.
-     * @param _addedvalue Number of tokens to decrease allowance.
+     * @param _subtractedValue Number of tokens to decrease allowance.
      * @return A bool that shows success or failure of process.
      */
     function decreaseApproval(address _spender, uint256 _subtractedValue) public returns (bool) {

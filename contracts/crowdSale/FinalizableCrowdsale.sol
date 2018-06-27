@@ -26,11 +26,12 @@ contract FinalizableCrowdsale is BasicCrowdsale {
      * @dev Finalizes the ICO.
      * @dev note Only owner is allowed to finalizing the crowdsale.
      * @dev note Only when the crowdsale is reached to its ending, finalization is allowed.
+     * @param toBeClosed A bool determines crowdsale must be colsed or refunded.
      */
-    function finalize() public onlyOwner {
+    function finalize(bool toBeClosed) public onlyOwner {
         require(!isFinalized);
         require(hasClosed());
-        finalization();
+        finalization(toBeClosed);
         isFinalized = true;
         emit Finalized();
     }
@@ -40,10 +41,11 @@ contract FinalizableCrowdsale is BasicCrowdsale {
      * @dev note If the softcap goal is reached this action would change the crowdsale state to 'Closed' state.
      * @dev note If the desired softcap goal is not raised this action would change the crowdsale state to 'Rfunding' state.
      * and since then every participant could refund his/her invests back.
+     * @param toBeClosed A bool determines crowdsale must be colsed or refunded.
      */
-    function finalization() internal {
+    function finalization(bool toBeClosed) internal {
         require(state == State.Active);
-        if (goalReached()) {
+        if (toBeClosed) {
             state = State.Closed;
             wallet.transfer(address(this).balance);
             emit Closed();

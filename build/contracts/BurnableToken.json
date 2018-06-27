@@ -546,7 +546,7 @@
         "contractDependencies": [
           292,
           1167,
-          3962
+          3968
         ],
         "contractKind": "contract",
         "documentation": "@title BurnableToken\r\n@dev Token that can be irreversibly burned (destroyed).\r",
@@ -555,7 +555,7 @@
         "linearizedBaseContracts": [
           171,
           1167,
-          3962,
+          3968,
           292
         ],
         "name": "BurnableToken",
@@ -699,10 +699,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4050,
-                        4051
+                        4466,
+                        4467
                       ],
-                      "referencedDeclaration": 4050,
+                      "referencedDeclaration": 4466,
                       "src": "458:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -781,7 +781,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4047,
+                              "referencedDeclaration": 4463,
                               "src": "536:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -831,10 +831,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4050,
-                        4051
+                        4466,
+                        4467
                       ],
-                      "referencedDeclaration": 4050,
+                      "referencedDeclaration": 4466,
                       "src": "504:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -891,7 +891,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4047,
+                          "referencedDeclaration": 4463,
                           "src": "568:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -973,7 +973,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4047,
+                              "referencedDeclaration": 4463,
                               "src": "591:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1157,7 +1157,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4047,
+                          "referencedDeclaration": 4463,
                           "src": "695:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1351,7 +1351,7 @@
         "contractDependencies": [
           292,
           1167,
-          3962
+          3968
         ],
         "contractKind": "contract",
         "documentation": "@title BurnableToken\r\n@dev Token that can be irreversibly burned (destroyed).\r",
@@ -1360,7 +1360,7 @@
         "linearizedBaseContracts": [
           171,
           1167,
-          3962,
+          3968,
           292
         ],
         "name": "BurnableToken",
@@ -1504,10 +1504,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4050,
-                        4051
+                        4466,
+                        4467
                       ],
-                      "referencedDeclaration": 4050,
+                      "referencedDeclaration": 4466,
                       "src": "458:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1586,7 +1586,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4047,
+                              "referencedDeclaration": 4463,
                               "src": "536:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1636,10 +1636,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4050,
-                        4051
+                        4466,
+                        4467
                       ],
-                      "referencedDeclaration": 4050,
+                      "referencedDeclaration": 4466,
                       "src": "504:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1696,7 +1696,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4047,
+                          "referencedDeclaration": 4463,
                           "src": "568:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1778,7 +1778,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4047,
+                              "referencedDeclaration": 4463,
                               "src": "591:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1962,7 +1962,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4047,
+                          "referencedDeclaration": 4463,
                           "src": "695:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2106,5 +2106,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-27T04:31:22.424Z"
+  "updatedAt": "2018-06-27T04:37:22.633Z"
 }

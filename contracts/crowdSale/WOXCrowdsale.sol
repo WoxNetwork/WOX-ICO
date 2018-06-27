@@ -7,6 +7,7 @@ import "./RefundableCrowdsale.sol";
 import "./ReferralCorwdsale.sol";
 import "./tokenReceiver.sol";
 import "./BurnableCrowdsale.sol";
+import "../ownership/Heritable.sol";
 
 /**
  * @title WOXCrowdsale
@@ -19,7 +20,8 @@ contract WOXCrowdsale is
     RefundableCrowdsale,
     ReferralCrowdsale,
     BurnableCrowdsale,
-    tokenReceiver
+    tokenReceiver,
+    Heritable
 {
     
     /**

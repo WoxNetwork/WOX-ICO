@@ -1,13 +1,13 @@
 pragma solidity ^0.4.23;
 
 import "./BurnableToken.sol";
-// import "../../ownership/Heritable.sol";
+import "../../ownership/Heritable.sol";
 
 /**
  * @title woxToken contract
  * @dev woxToken is an ERC223 Token compatible with ERC20 Tokens.
  */
-contract woxToken is BurnableToken {
+contract woxToken is BurnableToken, Heritable {
     constructor() public {
         name = "WOX.Network";
         symbol = "WOX";

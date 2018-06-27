@@ -114,7 +114,7 @@ function itRunsPreSaleTest() {
 
     it('Cliff: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }) }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }) }
         catch (error) { revert = error.message.includes('revert') }
         assert.isOk(revert);
     })
@@ -204,7 +204,7 @@ function itRunspreWhitelistTest() {
 
     it('preWhitelist: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -384,7 +384,7 @@ function itRunsPreICOTest() {
 
     it('preICO: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -585,7 +585,7 @@ function itRunsWhitelistTest() {
 
     it('Whitelist: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -751,7 +751,7 @@ function itRunsICO1Test() {
 
     it('ICO1: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -948,7 +948,7 @@ function itRunsICO2Test() {
 
     it('ICO2: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -1132,7 +1132,7 @@ function itRunsICO3Test() {
 
     it('ICO3: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })
@@ -1316,7 +1316,7 @@ function itRunsICO4Test() {
 
     it('ICO4: Should Revert on Finalizing ICO', async () => {
         var revert;
-        try { await woxCrowdsale.methods.finalize().send({ from: owner, gaa: 3000000 }); }
+        try { await woxCrowdsale.methods.finalize(true).send({ from: owner, gaa: 3000000 }); }
         catch (error) { revert = error.message.includes('revert'); }
         assert.isOk(revert);
     })

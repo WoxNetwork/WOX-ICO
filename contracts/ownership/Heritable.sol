@@ -33,16 +33,6 @@ contract Heritable is Ownable {
     _;
   }
 
-
-  /**
-   * @notice Create a new Heritable Contract with heir address 0x0.
-   * @param _heartbeatTimeout time available for the owner to notify they are alive,
-   * before the heir can take ownership.
-   */
-  constructor(uint256 _heartbeatTimeout) public {
-    setHeartbeatTimeout(_heartbeatTimeout);
-  }
-
   function setHeir(address newHeir) public onlyOwner {
     require(newHeir != owner);
     heartbeat();

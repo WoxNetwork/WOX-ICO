@@ -100,7 +100,7 @@ contract woxToken is BurnableToken, Heritable {
             return true;
         }
         else {
-            return _transferToAddress(msg.sender, _to, _amount, _data);
+            return _transferToAddress(msg.sender, _to, _amount);
         }
     }
 

@@ -162,7 +162,7 @@ contract BasicCrowdsale is WhtielistedVC {
      * @param _wallet The address to which a specified amount of depositted values must be transfered.
      * @param _weiAmount Amount values in wei must be withdrawn.
     */
-    function withdraw(address _wallet, uint256 _weiAmount) onlyOwner {
+    function withdraw(address _wallet, uint256 _weiAmount) public onlyOwner {
         require(_wallet != address(0));
         require(_weiAmount != 0);
         require(_weiAmount <= weiRaised);

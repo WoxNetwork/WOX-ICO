@@ -209,14 +209,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/crowdSale/WhitelistedVC.sol",
     "exportedSymbols": {
       "WhtielistedVC": [
-        3584
+        3575
       ]
     },
-    "id": 3585,
+    "id": 3576,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3514,
+        "id": 3505,
         "literals": [
           "solidity",
           "^",
@@ -229,10 +229,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/whitelist/whitelist.sol",
         "file": "../whitelist/whitelist.sol",
-        "id": 3515,
+        "id": 3506,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 4449,
+        "scope": 3576,
+        "sourceUnit": 4433,
         "src": "28:36:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -240,10 +240,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/crowdSale/TierLine.sol",
         "file": "./TierLine.sol",
-        "id": 3516,
+        "id": 3507,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 2934,
+        "scope": 3576,
+        "sourceUnit": 2925,
         "src": "66:24:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -251,10 +251,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
-        "id": 3517,
+        "id": 3508,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 3969,
+        "scope": 3576,
+        "sourceUnit": 3950,
         "src": "92:34:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -265,17 +265,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3518,
+              "id": 3509,
               "name": "TierLine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2933,
+              "referencedDeclaration": 2924,
               "src": "300:8:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TierLine_$2933",
+                "typeIdentifier": "t_contract$_TierLine_$2924",
                 "typeString": "contract TierLine"
               }
             },
-            "id": 3519,
+            "id": 3510,
             "nodeType": "InheritanceSpecifier",
             "src": "300:8:15"
           },
@@ -283,48 +283,48 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3520,
+              "id": 3511,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3968,
+              "referencedDeclaration": 3949,
               "src": "310:7:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$3968",
+                "typeIdentifier": "t_contract$_Ownable_$3949",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 3521,
+            "id": 3512,
             "nodeType": "InheritanceSpecifier",
             "src": "310:7:15"
           }
         ],
         "contractDependencies": [
-          2933,
-          3968
+          2924,
+          3949
         ],
         "contractKind": "contract",
         "documentation": "@title WhtielistedVC\r\n@dev WhtielistedVC is intended to manage VC Whitelisting process. It looks like\r\nCRUD implementation.\r",
         "fullyImplemented": true,
-        "id": 3584,
+        "id": 3575,
         "linearizedBaseContracts": [
-          3584,
-          3968,
-          2933
+          3575,
+          3949,
+          2924
         ],
         "name": "WhtielistedVC",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 3524,
+            "id": 3515,
             "libraryName": {
               "contractScope": null,
-              "id": 3522,
+              "id": 3513,
               "name": "whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4448,
+              "referencedDeclaration": 4432,
               "src": "331:9:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_whitelist_$4448",
+                "typeIdentifier": "t_contract$_whitelist_$4432",
                 "typeString": "library whitelist"
               }
             },
@@ -332,39 +332,39 @@
             "src": "325:40:15",
             "typeName": {
               "contractScope": null,
-              "id": 3523,
+              "id": 3514,
               "name": "whitelist.Whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4385,
+              "referencedDeclaration": 4369,
               "src": "345:19:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                 "typeString": "struct whitelist.Whitelist"
               }
             }
           },
           {
             "constant": false,
-            "id": 3526,
+            "id": 3517,
             "name": "VC",
             "nodeType": "VariableDeclaration",
-            "scope": 3584,
+            "scope": 3575,
             "src": "373:22:15",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+              "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
               "typeString": "struct whitelist.Whitelist"
             },
             "typeName": {
               "contractScope": null,
-              "id": 3525,
+              "id": 3516,
               "name": "whitelist.Whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4385,
+              "referencedDeclaration": 4369,
               "src": "373:19:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                 "typeString": "struct whitelist.Whitelist"
               }
             },
@@ -373,7 +373,7 @@
           },
           {
             "body": {
-              "id": 3541,
+              "id": 3532,
               "nodeType": "Block",
               "src": "669:30:15",
               "statements": [
@@ -383,11 +383,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3538,
+                        "id": 3529,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3528,
+                        "referencedDeclaration": 3519,
                         "src": "687:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -404,32 +404,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3535,
+                        "id": 3526,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "680:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3537,
+                      "id": 3528,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4401,
+                      "referencedDeclaration": 4385,
                       "src": "680:6:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address)"
                       }
                     },
-                    "id": 3539,
+                    "id": 3530,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -443,28 +443,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3540,
+                  "id": 3531,
                   "nodeType": "ExpressionStatement",
                   "src": "680:11:15"
                 }
               ]
             },
             "documentation": "@dev Adds new VC to the whitelist. \r\n@param _vc Address of VC must be added to whitelist.\r\nThis action is allowed only in pre-Whitelist and Whitelist Rounds.\r",
-            "id": 3542,
+            "id": 3533,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3531,
+                "id": 3522,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3530,
+                  "id": 3521,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3926,
+                  "referencedDeclaration": 3907,
                   "src": "639:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -476,14 +476,14 @@
               },
               {
                 "arguments": null,
-                "id": 3533,
+                "id": 3524,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3532,
+                  "id": 3523,
                   "name": "whitelistingAllowed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2932,
+                  "referencedDeclaration": 2923,
                   "src": "649:19:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -497,15 +497,15 @@
             "name": "addToVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3529,
+              "id": 3520,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3528,
+                  "id": 3519,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3542,
+                  "scope": 3533,
                   "src": "619:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -514,7 +514,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3527,
+                    "id": 3518,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "619:7:15",
@@ -531,12 +531,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3534,
+              "id": 3525,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "669:0:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "602:97:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -544,7 +544,7 @@
           },
           {
             "body": {
-              "id": 3557,
+              "id": 3548,
               "nodeType": "Block",
               "src": "980:33:15",
               "statements": [
@@ -554,11 +554,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3554,
+                        "id": 3545,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3544,
+                        "referencedDeclaration": 3535,
                         "src": "1001:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -575,32 +575,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3551,
+                        "id": 3542,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "991:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3553,
+                      "id": 3544,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "remove",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4417,
+                      "referencedDeclaration": 4401,
                       "src": "991:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address)"
                       }
                     },
-                    "id": 3555,
+                    "id": 3546,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -614,28 +614,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3556,
+                  "id": 3547,
                   "nodeType": "ExpressionStatement",
                   "src": "991:14:15"
                 }
               ]
             },
             "documentation": "@dev Removes new VC from whitelist.\r\n@param _vc Address of VC must be removed from whitelist.\r\nThis action is allowed only in pre-Whitelist and Whitelist Rounds.\r",
-            "id": 3558,
+            "id": 3549,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3547,
+                "id": 3538,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3546,
+                  "id": 3537,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3926,
+                  "referencedDeclaration": 3907,
                   "src": "950:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -647,14 +647,14 @@
               },
               {
                 "arguments": null,
-                "id": 3549,
+                "id": 3540,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3548,
+                  "id": 3539,
                   "name": "whitelistingAllowed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2932,
+                  "referencedDeclaration": 2923,
                   "src": "960:19:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -668,15 +668,15 @@
             "name": "removeFromVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3545,
+              "id": 3536,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3544,
+                  "id": 3535,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3558,
+                  "scope": 3549,
                   "src": "930:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -685,7 +685,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3543,
+                    "id": 3534,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "930:7:15",
@@ -702,12 +702,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3550,
+              "id": 3541,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "980:0:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "908:105:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -715,7 +715,7 @@
           },
           {
             "body": {
-              "id": 3570,
+              "id": 3561,
               "nodeType": "Block",
               "src": "1309:37:15",
               "statements": [
@@ -725,11 +725,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3567,
+                        "id": 3558,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3560,
+                        "referencedDeclaration": 3551,
                         "src": "1334:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -746,32 +746,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3565,
+                        "id": 3556,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "1327:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3566,
+                      "id": 3557,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "has",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4432,
+                      "referencedDeclaration": 4416,
                       "src": "1327:6:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address) view returns (bool)"
                       }
                     },
-                    "id": 3568,
+                    "id": 3559,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -785,15 +785,15 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 3564,
-                  "id": 3569,
+                  "functionReturnParameters": 3555,
+                  "id": 3560,
                   "nodeType": "Return",
                   "src": "1320:18:15"
                 }
               ]
             },
             "documentation": "@dev Checks if a specified VC address has been insrted to VC Whitelist.\r\n@param _vc The address of VC must be checked.\r\n@return A bool showing the passed address is whitelisted before.\r",
-            "id": 3571,
+            "id": 3562,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -801,15 +801,15 @@
             "name": "whtielistedAsVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3561,
+              "id": 3552,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3560,
+                  "id": 3551,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3571,
+                  "scope": 3562,
                   "src": "1270:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -818,7 +818,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3559,
+                    "id": 3550,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1270:7:15",
@@ -835,15 +835,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3564,
+              "id": 3555,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3563,
+                  "id": 3554,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3571,
+                  "scope": 3562,
                   "src": "1304:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -852,7 +852,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3562,
+                    "id": 3553,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1304:4:15",
@@ -867,7 +867,7 @@
               ],
               "src": "1303:6:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "1245:101:15",
             "stateMutability": "view",
             "superFunction": null,
@@ -875,7 +875,7 @@
           },
           {
             "body": {
-              "id": 3582,
+              "id": 3573,
               "nodeType": "Block",
               "src": "1530:60:15",
               "statements": [
@@ -888,11 +888,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 3577,
+                            "id": 3568,
                             "name": "_vc",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3573,
+                            "referencedDeclaration": 3564,
                             "src": "1565:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -907,18 +907,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 3576,
+                          "id": 3567,
                           "name": "whtielistedAsVC",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3571,
+                          "referencedDeclaration": 3562,
                           "src": "1549:15:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 3578,
+                        "id": 3569,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -940,21 +940,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3575,
+                      "id": 3566,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4466,
-                        4467
+                        4450,
+                        4451
                       ],
-                      "referencedDeclaration": 4466,
+                      "referencedDeclaration": 4450,
                       "src": "1541:7:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3579,
+                    "id": 3570,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -968,31 +968,31 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3580,
+                  "id": 3571,
                   "nodeType": "ExpressionStatement",
                   "src": "1541:29:15"
                 },
                 {
-                  "id": 3581,
+                  "id": 3572,
                   "nodeType": "PlaceholderStatement",
                   "src": "1581:1:15"
                 }
               ]
             },
             "documentation": "@dev A modifier requires a specified address is whitelisted as VC.\r\n@param _vc The address of VC must be checked.\r",
-            "id": 3583,
+            "id": 3574,
             "name": "onlyVC",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3574,
+              "id": 3565,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3573,
+                  "id": 3564,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3583,
+                  "scope": 3574,
                   "src": "1517:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1001,7 +1001,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3572,
+                    "id": 3563,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1517:7:15",
@@ -1020,7 +1020,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 3585,
+        "scope": 3576,
         "src": "274:1321:15"
       }
     ],
@@ -1030,14 +1030,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/crowdSale/WhitelistedVC.sol",
     "exportedSymbols": {
       "WhtielistedVC": [
-        3584
+        3575
       ]
     },
-    "id": 3585,
+    "id": 3576,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3514,
+        "id": 3505,
         "literals": [
           "solidity",
           "^",
@@ -1050,10 +1050,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/whitelist/whitelist.sol",
         "file": "../whitelist/whitelist.sol",
-        "id": 3515,
+        "id": 3506,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 4449,
+        "scope": 3576,
+        "sourceUnit": 4433,
         "src": "28:36:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1061,10 +1061,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/crowdSale/TierLine.sol",
         "file": "./TierLine.sol",
-        "id": 3516,
+        "id": 3507,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 2934,
+        "scope": 3576,
+        "sourceUnit": 2925,
         "src": "66:24:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1072,10 +1072,10 @@
       {
         "absolutePath": "/G/Root/Blockchain/WOX/contracts/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
-        "id": 3517,
+        "id": 3508,
         "nodeType": "ImportDirective",
-        "scope": 3585,
-        "sourceUnit": 3969,
+        "scope": 3576,
+        "sourceUnit": 3950,
         "src": "92:34:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1086,17 +1086,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3518,
+              "id": 3509,
               "name": "TierLine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2933,
+              "referencedDeclaration": 2924,
               "src": "300:8:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TierLine_$2933",
+                "typeIdentifier": "t_contract$_TierLine_$2924",
                 "typeString": "contract TierLine"
               }
             },
-            "id": 3519,
+            "id": 3510,
             "nodeType": "InheritanceSpecifier",
             "src": "300:8:15"
           },
@@ -1104,48 +1104,48 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3520,
+              "id": 3511,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3968,
+              "referencedDeclaration": 3949,
               "src": "310:7:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$3968",
+                "typeIdentifier": "t_contract$_Ownable_$3949",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 3521,
+            "id": 3512,
             "nodeType": "InheritanceSpecifier",
             "src": "310:7:15"
           }
         ],
         "contractDependencies": [
-          2933,
-          3968
+          2924,
+          3949
         ],
         "contractKind": "contract",
         "documentation": "@title WhtielistedVC\r\n@dev WhtielistedVC is intended to manage VC Whitelisting process. It looks like\r\nCRUD implementation.\r",
         "fullyImplemented": true,
-        "id": 3584,
+        "id": 3575,
         "linearizedBaseContracts": [
-          3584,
-          3968,
-          2933
+          3575,
+          3949,
+          2924
         ],
         "name": "WhtielistedVC",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 3524,
+            "id": 3515,
             "libraryName": {
               "contractScope": null,
-              "id": 3522,
+              "id": 3513,
               "name": "whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4448,
+              "referencedDeclaration": 4432,
               "src": "331:9:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_whitelist_$4448",
+                "typeIdentifier": "t_contract$_whitelist_$4432",
                 "typeString": "library whitelist"
               }
             },
@@ -1153,39 +1153,39 @@
             "src": "325:40:15",
             "typeName": {
               "contractScope": null,
-              "id": 3523,
+              "id": 3514,
               "name": "whitelist.Whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4385,
+              "referencedDeclaration": 4369,
               "src": "345:19:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                 "typeString": "struct whitelist.Whitelist"
               }
             }
           },
           {
             "constant": false,
-            "id": 3526,
+            "id": 3517,
             "name": "VC",
             "nodeType": "VariableDeclaration",
-            "scope": 3584,
+            "scope": 3575,
             "src": "373:22:15",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+              "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
               "typeString": "struct whitelist.Whitelist"
             },
             "typeName": {
               "contractScope": null,
-              "id": 3525,
+              "id": 3516,
               "name": "whitelist.Whitelist",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4385,
+              "referencedDeclaration": 4369,
               "src": "373:19:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                 "typeString": "struct whitelist.Whitelist"
               }
             },
@@ -1194,7 +1194,7 @@
           },
           {
             "body": {
-              "id": 3541,
+              "id": 3532,
               "nodeType": "Block",
               "src": "669:30:15",
               "statements": [
@@ -1204,11 +1204,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3538,
+                        "id": 3529,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3528,
+                        "referencedDeclaration": 3519,
                         "src": "687:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1225,32 +1225,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3535,
+                        "id": 3526,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "680:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3537,
+                      "id": 3528,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4401,
+                      "referencedDeclaration": 4385,
                       "src": "680:6:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address)"
                       }
                     },
-                    "id": 3539,
+                    "id": 3530,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1264,28 +1264,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3540,
+                  "id": 3531,
                   "nodeType": "ExpressionStatement",
                   "src": "680:11:15"
                 }
               ]
             },
             "documentation": "@dev Adds new VC to the whitelist. \r\n@param _vc Address of VC must be added to whitelist.\r\nThis action is allowed only in pre-Whitelist and Whitelist Rounds.\r",
-            "id": 3542,
+            "id": 3533,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3531,
+                "id": 3522,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3530,
+                  "id": 3521,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3926,
+                  "referencedDeclaration": 3907,
                   "src": "639:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1297,14 +1297,14 @@
               },
               {
                 "arguments": null,
-                "id": 3533,
+                "id": 3524,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3532,
+                  "id": 3523,
                   "name": "whitelistingAllowed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2932,
+                  "referencedDeclaration": 2923,
                   "src": "649:19:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1318,15 +1318,15 @@
             "name": "addToVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3529,
+              "id": 3520,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3528,
+                  "id": 3519,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3542,
+                  "scope": 3533,
                   "src": "619:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1335,7 +1335,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3527,
+                    "id": 3518,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "619:7:15",
@@ -1352,12 +1352,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3534,
+              "id": 3525,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "669:0:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "602:97:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1365,7 +1365,7 @@
           },
           {
             "body": {
-              "id": 3557,
+              "id": 3548,
               "nodeType": "Block",
               "src": "980:33:15",
               "statements": [
@@ -1375,11 +1375,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3554,
+                        "id": 3545,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3544,
+                        "referencedDeclaration": 3535,
                         "src": "1001:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1396,32 +1396,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3551,
+                        "id": 3542,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "991:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3553,
+                      "id": 3544,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "remove",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4417,
+                      "referencedDeclaration": 4401,
                       "src": "991:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address)"
                       }
                     },
-                    "id": 3555,
+                    "id": 3546,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1435,28 +1435,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3556,
+                  "id": 3547,
                   "nodeType": "ExpressionStatement",
                   "src": "991:14:15"
                 }
               ]
             },
             "documentation": "@dev Removes new VC from whitelist.\r\n@param _vc Address of VC must be removed from whitelist.\r\nThis action is allowed only in pre-Whitelist and Whitelist Rounds.\r",
-            "id": 3558,
+            "id": 3549,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3547,
+                "id": 3538,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3546,
+                  "id": 3537,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3926,
+                  "referencedDeclaration": 3907,
                   "src": "950:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1468,14 +1468,14 @@
               },
               {
                 "arguments": null,
-                "id": 3549,
+                "id": 3540,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3548,
+                  "id": 3539,
                   "name": "whitelistingAllowed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2932,
+                  "referencedDeclaration": 2923,
                   "src": "960:19:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1489,15 +1489,15 @@
             "name": "removeFromVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3545,
+              "id": 3536,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3544,
+                  "id": 3535,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3558,
+                  "scope": 3549,
                   "src": "930:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1506,7 +1506,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3543,
+                    "id": 3534,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "930:7:15",
@@ -1523,12 +1523,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3550,
+              "id": 3541,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "980:0:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "908:105:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1536,7 +1536,7 @@
           },
           {
             "body": {
-              "id": 3570,
+              "id": 3561,
               "nodeType": "Block",
               "src": "1309:37:15",
               "statements": [
@@ -1546,11 +1546,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3567,
+                        "id": 3558,
                         "name": "_vc",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3560,
+                        "referencedDeclaration": 3551,
                         "src": "1334:3:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1567,32 +1567,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3565,
+                        "id": 3556,
                         "name": "VC",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3526,
+                        "referencedDeclaration": 3517,
                         "src": "1327:2:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage",
                           "typeString": "struct whitelist.Whitelist storage ref"
                         }
                       },
-                      "id": 3566,
+                      "id": 3557,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "has",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4432,
+                      "referencedDeclaration": 4416,
                       "src": "1327:6:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Whitelist_$4385_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Whitelist_$4369_storage_ptr_$",
                         "typeString": "function (struct whitelist.Whitelist storage pointer,address) view returns (bool)"
                       }
                     },
-                    "id": 3568,
+                    "id": 3559,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1606,15 +1606,15 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 3564,
-                  "id": 3569,
+                  "functionReturnParameters": 3555,
+                  "id": 3560,
                   "nodeType": "Return",
                   "src": "1320:18:15"
                 }
               ]
             },
             "documentation": "@dev Checks if a specified VC address has been insrted to VC Whitelist.\r\n@param _vc The address of VC must be checked.\r\n@return A bool showing the passed address is whitelisted before.\r",
-            "id": 3571,
+            "id": 3562,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1622,15 +1622,15 @@
             "name": "whtielistedAsVC",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3561,
+              "id": 3552,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3560,
+                  "id": 3551,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3571,
+                  "scope": 3562,
                   "src": "1270:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1639,7 +1639,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3559,
+                    "id": 3550,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1270:7:15",
@@ -1656,15 +1656,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3564,
+              "id": 3555,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3563,
+                  "id": 3554,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3571,
+                  "scope": 3562,
                   "src": "1304:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1673,7 +1673,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3562,
+                    "id": 3553,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1304:4:15",
@@ -1688,7 +1688,7 @@
               ],
               "src": "1303:6:15"
             },
-            "scope": 3584,
+            "scope": 3575,
             "src": "1245:101:15",
             "stateMutability": "view",
             "superFunction": null,
@@ -1696,7 +1696,7 @@
           },
           {
             "body": {
-              "id": 3582,
+              "id": 3573,
               "nodeType": "Block",
               "src": "1530:60:15",
               "statements": [
@@ -1709,11 +1709,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 3577,
+                            "id": 3568,
                             "name": "_vc",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3573,
+                            "referencedDeclaration": 3564,
                             "src": "1565:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1728,18 +1728,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 3576,
+                          "id": 3567,
                           "name": "whtielistedAsVC",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3571,
+                          "referencedDeclaration": 3562,
                           "src": "1549:15:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 3578,
+                        "id": 3569,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1761,21 +1761,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3575,
+                      "id": 3566,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4466,
-                        4467
+                        4450,
+                        4451
                       ],
-                      "referencedDeclaration": 4466,
+                      "referencedDeclaration": 4450,
                       "src": "1541:7:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3579,
+                    "id": 3570,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1789,31 +1789,31 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3580,
+                  "id": 3571,
                   "nodeType": "ExpressionStatement",
                   "src": "1541:29:15"
                 },
                 {
-                  "id": 3581,
+                  "id": 3572,
                   "nodeType": "PlaceholderStatement",
                   "src": "1581:1:15"
                 }
               ]
             },
             "documentation": "@dev A modifier requires a specified address is whitelisted as VC.\r\n@param _vc The address of VC must be checked.\r",
-            "id": 3583,
+            "id": 3574,
             "name": "onlyVC",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3574,
+              "id": 3565,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3573,
+                  "id": 3564,
                   "name": "_vc",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3583,
+                  "scope": 3574,
                   "src": "1517:11:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1822,7 +1822,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3572,
+                    "id": 3563,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1517:7:15",
@@ -1841,7 +1841,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 3585,
+        "scope": 3576,
         "src": "274:1321:15"
       }
     ],
@@ -1853,5 +1853,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-27T04:37:22.663Z"
+  "updatedAt": "2018-06-27T06:56:02.094Z"
 }

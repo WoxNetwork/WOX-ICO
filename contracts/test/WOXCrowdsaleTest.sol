@@ -7,6 +7,7 @@ import "../crowdSale/RefundableCrowdsale.sol";
 import "../crowdSale/ReferralCorwdsale.sol";
 import "../crowdSale/tokenReceiver.sol";
 import "../crowdSale/BurnableCrowdsale.sol";
+import "../ownership/Heritable.sol";
 
 contract WOXCrowdsaleTest is 
     BasicCrowdsale,
@@ -15,7 +16,8 @@ contract WOXCrowdsaleTest is
     RefundableCrowdsale,
     ReferralCrowdsale,
     BurnableCrowdsale,
-    tokenReceiver
+    tokenReceiver,
+    Heritable
 {
     constructor(
         uint256 _cliff,

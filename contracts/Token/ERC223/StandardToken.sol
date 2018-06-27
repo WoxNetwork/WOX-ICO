@@ -75,7 +75,7 @@ contract StandardToken is ERC223, Ownable {
         if(_to.isContract()) {
             return _transferToContract(msg.sender, _to, _value, empty);
         } else {
-            return _transferToAddress(msg.sender, _to, _value, empty);
+            return _transferToAddress(msg.sender, _to, _value);
         }
     }
 
@@ -94,7 +94,7 @@ contract StandardToken is ERC223, Ownable {
         if(_to.isContract()) {
             return _transferToContract(msg.sender, _to, _value, _data);
         } else {
-            return _transferToAddress(msg.sender, _to, _value, _data);
+            return _transferToAddress(msg.sender, _to, _value);
         }
     }
 
@@ -119,7 +119,7 @@ contract StandardToken is ERC223, Ownable {
             return true;
         }
         else {
-            return _transferToAddress(msg.sender, _to, _value, _data);
+            return _transferToAddress(msg.sender, _to, _value);
         }
     }
 
@@ -156,7 +156,7 @@ contract StandardToken is ERC223, Ownable {
             return _transferToContract(_from, _to, _value, empty);
         } else {
 
-            return _transferToAddress(_from, _to, _value, empty);
+            return _transferToAddress(_from, _to, _value);
         }
     }
 
@@ -179,7 +179,7 @@ contract StandardToken is ERC223, Ownable {
         if (_to.isContract()) {
             return _transferToContract(_from, _to, _value, _data);
         } else {
-            return _transferToAddress(_from, _to, _value, _data);
+            return _transferToAddress(_from, _to, _value);
         }
     }
 
@@ -208,7 +208,7 @@ contract StandardToken is ERC223, Ownable {
             return true;
         }
         else {
-            return _transferToAddress(_from, _to, _value, _data);
+            return _transferToAddress(_from, _to, _value);
         }
     }
 
@@ -258,10 +258,9 @@ contract StandardToken is ERC223, Ownable {
      * @param _from The address will send tokens.
      * @param _to The addrss will receive tokens.
      * @param _value Number of tokens will be transfered.
-     * @param _data Specified data should be sent to the address.
      * @return A bool that shows success or failure of process.
      */
-    function _transferToAddress(address _from, address _to, uint256 _value, bytes _data) internal returns (bool) {
+    function _transferToAddress(address _from, address _to, uint256 _value) internal returns (bool) {
         balances[_from] = balances[_from].sub(_value);
         balances[_to] = balances[_to].add(_value);
         emit Transfer(_from, _to, _value);

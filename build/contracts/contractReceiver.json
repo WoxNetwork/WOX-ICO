@@ -34,14 +34,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/Token/ERC223/contractReceiver.sol",
     "exportedSymbols": {
       "contractReceiver": [
-        1179
+        1171
       ]
     },
-    "id": 1180,
+    "id": 1172,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1169,
+        "id": 1161,
         "literals": [
           "solidity",
           "^",
@@ -57,9 +57,9 @@
         "contractKind": "contract",
         "documentation": "title Teoken Receiver contract interface.\r",
         "fullyImplemented": false,
-        "id": 1179,
+        "id": 1171,
         "linearizedBaseContracts": [
-          1179
+          1171
         ],
         "name": "contractReceiver",
         "nodeType": "ContractDefinition",
@@ -67,7 +67,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1178,
+            "id": 1170,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -75,15 +75,15 @@
             "name": "tokenFallback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1176,
+              "id": 1168,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1171,
+                  "id": 1163,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "140:13:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -92,7 +92,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1170,
+                    "id": 1162,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "140:7:5",
@@ -106,10 +106,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1173,
+                  "id": 1165,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "155:14:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -118,7 +118,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1172,
+                    "id": 1164,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "155:7:5",
@@ -132,10 +132,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1175,
+                  "id": 1167,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "171:11:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -144,7 +144,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1174,
+                    "id": 1166,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:5:5",
@@ -161,19 +161,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1177,
+              "id": 1169,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "195:0:5"
             },
-            "scope": 1179,
+            "scope": 1171,
             "src": "117:79:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1180,
+        "scope": 1172,
         "src": "84:115:5"
       }
     ],
@@ -183,14 +183,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/Token/ERC223/contractReceiver.sol",
     "exportedSymbols": {
       "contractReceiver": [
-        1179
+        1171
       ]
     },
-    "id": 1180,
+    "id": 1172,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1169,
+        "id": 1161,
         "literals": [
           "solidity",
           "^",
@@ -206,9 +206,9 @@
         "contractKind": "contract",
         "documentation": "title Teoken Receiver contract interface.\r",
         "fullyImplemented": false,
-        "id": 1179,
+        "id": 1171,
         "linearizedBaseContracts": [
-          1179
+          1171
         ],
         "name": "contractReceiver",
         "nodeType": "ContractDefinition",
@@ -216,7 +216,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1178,
+            "id": 1170,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -224,15 +224,15 @@
             "name": "tokenFallback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1176,
+              "id": 1168,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1171,
+                  "id": 1163,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "140:13:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -241,7 +241,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1170,
+                    "id": 1162,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "140:7:5",
@@ -255,10 +255,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1173,
+                  "id": 1165,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "155:14:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -267,7 +267,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1172,
+                    "id": 1164,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "155:7:5",
@@ -281,10 +281,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1175,
+                  "id": 1167,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1170,
                   "src": "171:11:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -293,7 +293,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1174,
+                    "id": 1166,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:5:5",
@@ -310,19 +310,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1177,
+              "id": 1169,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "195:0:5"
             },
-            "scope": 1179,
+            "scope": 1171,
             "src": "117:79:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1180,
+        "scope": 1172,
         "src": "84:115:5"
       }
     ],
@@ -334,5 +334,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-27T04:37:22.634Z"
+  "updatedAt": "2018-06-27T06:56:02.071Z"
 }

@@ -11,14 +11,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/whitelist/whitelist.sol",
     "exportedSymbols": {
       "whitelist": [
-        4448
+        4432
       ]
     },
-    "id": 4449,
+    "id": 4433,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4380,
+        "id": 4364,
         "literals": [
           "solidity",
           "^",
@@ -34,23 +34,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4448,
+        "id": 4432,
         "linearizedBaseContracts": [
-          4448
+          4432
         ],
         "name": "whitelist",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "whitelist.Whitelist",
-            "id": 4385,
+            "id": 4369,
             "members": [
               {
                 "constant": false,
-                "id": 4384,
+                "id": 4368,
                 "name": "bearer",
                 "nodeType": "VariableDeclaration",
-                "scope": 4385,
+                "scope": 4369,
                 "src": "81:31:20",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -59,9 +59,9 @@
                   "typeString": "mapping(address => bool)"
                 },
                 "typeName": {
-                  "id": 4383,
+                  "id": 4367,
                   "keyType": {
-                    "id": 4381,
+                    "id": 4365,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "89:7:20",
@@ -77,7 +77,7 @@
                     "typeString": "mapping(address => bool)"
                   },
                   "valueType": {
-                    "id": 4382,
+                    "id": 4366,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "100:4:20",
@@ -93,20 +93,20 @@
             ],
             "name": "Whitelist",
             "nodeType": "StructDefinition",
-            "scope": 4448,
+            "scope": 4432,
             "src": "53:67:20",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4400,
+              "id": 4384,
               "nodeType": "Block",
               "src": "193:48:20",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4398,
+                    "id": 4382,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -117,39 +117,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 4392,
+                          "id": 4376,
                           "name": "wlist",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4387,
+                          "referencedDeclaration": 4371,
                           "src": "204:5:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                            "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                             "typeString": "struct whitelist.Whitelist storage pointer"
                           }
                         },
-                        "id": 4395,
+                        "id": 4379,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "bearer",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4384,
+                        "referencedDeclaration": 4368,
                         "src": "204:12:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 4396,
+                      "id": 4380,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 4394,
+                        "id": 4378,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4389,
+                        "referencedDeclaration": 4373,
                         "src": "217:8:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -172,7 +172,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 4397,
+                      "id": 4381,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -193,14 +193,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4399,
+                  "id": 4383,
                   "nodeType": "ExpressionStatement",
                   "src": "204:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4401,
+            "id": 4385,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -208,31 +208,31 @@
             "name": "add",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4390,
+              "id": 4374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4387,
+                  "id": 4371,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4385,
                   "src": "141:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4386,
+                    "id": 4370,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "141:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -241,10 +241,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4389,
+                  "id": 4373,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4385,
                   "src": "166:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -253,7 +253,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4388,
+                    "id": 4372,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "166:7:20",
@@ -270,12 +270,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4391,
+              "id": 4375,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "193:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "128:113:20",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -283,14 +283,14 @@
           },
           {
             "body": {
-              "id": 4416,
+              "id": 4400,
               "nodeType": "Block",
               "src": "317:49:20",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4414,
+                    "id": 4398,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -301,39 +301,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 4408,
+                          "id": 4392,
                           "name": "wlist",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4403,
+                          "referencedDeclaration": 4387,
                           "src": "328:5:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                            "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                             "typeString": "struct whitelist.Whitelist storage pointer"
                           }
                         },
-                        "id": 4411,
+                        "id": 4395,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "bearer",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4384,
+                        "referencedDeclaration": 4368,
                         "src": "328:12:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 4412,
+                      "id": 4396,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 4410,
+                        "id": 4394,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4389,
                         "src": "341:8:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -356,7 +356,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 4413,
+                      "id": 4397,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -377,14 +377,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4415,
+                  "id": 4399,
                   "nodeType": "ExpressionStatement",
                   "src": "328:30:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4417,
+            "id": 4401,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -392,31 +392,31 @@
             "name": "remove",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4406,
+              "id": 4390,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4403,
+                  "id": 4387,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4417,
+                  "scope": 4401,
                   "src": "265:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4402,
+                    "id": 4386,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "265:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -425,10 +425,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4405,
+                  "id": 4389,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4417,
+                  "scope": 4401,
                   "src": "290:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -437,7 +437,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4404,
+                    "id": 4388,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "290:7:20",
@@ -454,12 +454,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4407,
+              "id": 4391,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "317:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "249:117:20",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -467,7 +467,7 @@
           },
           {
             "body": {
-              "id": 4431,
+              "id": 4415,
               "nodeType": "Block",
               "src": "459:48:20",
               "statements": [
@@ -478,39 +478,39 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4426,
+                        "id": 4410,
                         "name": "wlist",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4419,
+                        "referencedDeclaration": 4403,
                         "src": "477:5:20",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                           "typeString": "struct whitelist.Whitelist storage pointer"
                         }
                       },
-                      "id": 4427,
+                      "id": 4411,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "bearer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4384,
+                      "referencedDeclaration": 4368,
                       "src": "477:12:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 4429,
+                    "id": 4413,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 4428,
+                      "id": 4412,
                       "name": "_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4421,
+                      "referencedDeclaration": 4405,
                       "src": "490:8:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -528,15 +528,15 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 4425,
-                  "id": 4430,
+                  "functionReturnParameters": 4409,
+                  "id": 4414,
                   "nodeType": "Return",
                   "src": "470:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4432,
+            "id": 4416,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -544,31 +544,31 @@
             "name": "has",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4422,
+              "id": 4406,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4419,
+                  "id": 4403,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "387:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4418,
+                    "id": 4402,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "387:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -577,10 +577,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4421,
+                  "id": 4405,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "412:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -589,7 +589,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4420,
+                    "id": 4404,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "412:7:20",
@@ -606,15 +606,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4425,
+              "id": 4409,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4424,
+                  "id": 4408,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "453:4:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -623,7 +623,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4423,
+                    "id": 4407,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "453:4:20",
@@ -638,7 +638,7 @@
               ],
               "src": "452:6:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "374:133:20",
             "stateMutability": "view",
             "superFunction": null,
@@ -646,7 +646,7 @@
           },
           {
             "body": {
-              "id": 4446,
+              "id": 4430,
               "nodeType": "Block",
               "src": "587:48:20",
               "statements": [
@@ -659,24 +659,24 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4441,
+                            "id": 4425,
                             "name": "wlist",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4434,
+                            "referencedDeclaration": 4418,
                             "src": "610:5:20",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                              "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                               "typeString": "struct whitelist.Whitelist storage pointer"
                             }
                           },
                           {
                             "argumentTypes": null,
-                            "id": 4442,
+                            "id": 4426,
                             "name": "_address",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4436,
+                            "referencedDeclaration": 4420,
                             "src": "617:8:20",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -687,7 +687,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                              "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                               "typeString": "struct whitelist.Whitelist storage pointer"
                             },
                             {
@@ -695,18 +695,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 4440,
+                          "id": 4424,
                           "name": "has",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4432,
+                          "referencedDeclaration": 4416,
                           "src": "606:3:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (struct whitelist.Whitelist storage pointer,address) view returns (bool)"
                           }
                         },
-                        "id": 4443,
+                        "id": 4427,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -728,21 +728,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4439,
+                      "id": 4423,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4466,
-                        4467
+                        4450,
+                        4451
                       ],
-                      "referencedDeclaration": 4466,
+                      "referencedDeclaration": 4450,
                       "src": "598:7:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4444,
+                    "id": 4428,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -756,14 +756,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4445,
+                  "id": 4429,
                   "nodeType": "ExpressionStatement",
                   "src": "598:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4447,
+            "id": 4431,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -771,31 +771,31 @@
             "name": "check",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4437,
+              "id": 4421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4434,
+                  "id": 4418,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4447,
+                  "scope": 4431,
                   "src": "530:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4433,
+                    "id": 4417,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "530:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -804,10 +804,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4436,
+                  "id": 4420,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4447,
+                  "scope": 4431,
                   "src": "555:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -816,7 +816,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4435,
+                    "id": 4419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "555:7:20",
@@ -833,19 +833,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4438,
+              "id": 4422,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "587:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "515:120:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 4449,
+        "scope": 4433,
         "src": "28:612:20"
       }
     ],
@@ -855,14 +855,14 @@
     "absolutePath": "/G/Root/Blockchain/WOX/contracts/whitelist/whitelist.sol",
     "exportedSymbols": {
       "whitelist": [
-        4448
+        4432
       ]
     },
-    "id": 4449,
+    "id": 4433,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4380,
+        "id": 4364,
         "literals": [
           "solidity",
           "^",
@@ -878,23 +878,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4448,
+        "id": 4432,
         "linearizedBaseContracts": [
-          4448
+          4432
         ],
         "name": "whitelist",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "whitelist.Whitelist",
-            "id": 4385,
+            "id": 4369,
             "members": [
               {
                 "constant": false,
-                "id": 4384,
+                "id": 4368,
                 "name": "bearer",
                 "nodeType": "VariableDeclaration",
-                "scope": 4385,
+                "scope": 4369,
                 "src": "81:31:20",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -903,9 +903,9 @@
                   "typeString": "mapping(address => bool)"
                 },
                 "typeName": {
-                  "id": 4383,
+                  "id": 4367,
                   "keyType": {
-                    "id": 4381,
+                    "id": 4365,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "89:7:20",
@@ -921,7 +921,7 @@
                     "typeString": "mapping(address => bool)"
                   },
                   "valueType": {
-                    "id": 4382,
+                    "id": 4366,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "100:4:20",
@@ -937,20 +937,20 @@
             ],
             "name": "Whitelist",
             "nodeType": "StructDefinition",
-            "scope": 4448,
+            "scope": 4432,
             "src": "53:67:20",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4400,
+              "id": 4384,
               "nodeType": "Block",
               "src": "193:48:20",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4398,
+                    "id": 4382,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -961,39 +961,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 4392,
+                          "id": 4376,
                           "name": "wlist",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4387,
+                          "referencedDeclaration": 4371,
                           "src": "204:5:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                            "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                             "typeString": "struct whitelist.Whitelist storage pointer"
                           }
                         },
-                        "id": 4395,
+                        "id": 4379,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "bearer",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4384,
+                        "referencedDeclaration": 4368,
                         "src": "204:12:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 4396,
+                      "id": 4380,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 4394,
+                        "id": 4378,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4389,
+                        "referencedDeclaration": 4373,
                         "src": "217:8:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1016,7 +1016,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 4397,
+                      "id": 4381,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1037,14 +1037,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4399,
+                  "id": 4383,
                   "nodeType": "ExpressionStatement",
                   "src": "204:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4401,
+            "id": 4385,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1052,31 +1052,31 @@
             "name": "add",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4390,
+              "id": 4374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4387,
+                  "id": 4371,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4385,
                   "src": "141:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4386,
+                    "id": 4370,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "141:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -1085,10 +1085,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4389,
+                  "id": 4373,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4385,
                   "src": "166:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1097,7 +1097,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4388,
+                    "id": 4372,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "166:7:20",
@@ -1114,12 +1114,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4391,
+              "id": 4375,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "193:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "128:113:20",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1127,14 +1127,14 @@
           },
           {
             "body": {
-              "id": 4416,
+              "id": 4400,
               "nodeType": "Block",
               "src": "317:49:20",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4414,
+                    "id": 4398,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1145,39 +1145,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 4408,
+                          "id": 4392,
                           "name": "wlist",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4403,
+                          "referencedDeclaration": 4387,
                           "src": "328:5:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                            "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                             "typeString": "struct whitelist.Whitelist storage pointer"
                           }
                         },
-                        "id": 4411,
+                        "id": 4395,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "bearer",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4384,
+                        "referencedDeclaration": 4368,
                         "src": "328:12:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 4412,
+                      "id": 4396,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 4410,
+                        "id": 4394,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4389,
                         "src": "341:8:20",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1200,7 +1200,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 4413,
+                      "id": 4397,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1221,14 +1221,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4415,
+                  "id": 4399,
                   "nodeType": "ExpressionStatement",
                   "src": "328:30:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4417,
+            "id": 4401,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1236,31 +1236,31 @@
             "name": "remove",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4406,
+              "id": 4390,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4403,
+                  "id": 4387,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4417,
+                  "scope": 4401,
                   "src": "265:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4402,
+                    "id": 4386,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "265:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -1269,10 +1269,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4405,
+                  "id": 4389,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4417,
+                  "scope": 4401,
                   "src": "290:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1281,7 +1281,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4404,
+                    "id": 4388,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "290:7:20",
@@ -1298,12 +1298,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4407,
+              "id": 4391,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "317:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "249:117:20",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1311,7 +1311,7 @@
           },
           {
             "body": {
-              "id": 4431,
+              "id": 4415,
               "nodeType": "Block",
               "src": "459:48:20",
               "statements": [
@@ -1322,39 +1322,39 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4426,
+                        "id": 4410,
                         "name": "wlist",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4419,
+                        "referencedDeclaration": 4403,
                         "src": "477:5:20",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                          "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                           "typeString": "struct whitelist.Whitelist storage pointer"
                         }
                       },
-                      "id": 4427,
+                      "id": 4411,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "bearer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4384,
+                      "referencedDeclaration": 4368,
                       "src": "477:12:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 4429,
+                    "id": 4413,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 4428,
+                      "id": 4412,
                       "name": "_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4421,
+                      "referencedDeclaration": 4405,
                       "src": "490:8:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1372,15 +1372,15 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 4425,
-                  "id": 4430,
+                  "functionReturnParameters": 4409,
+                  "id": 4414,
                   "nodeType": "Return",
                   "src": "470:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4432,
+            "id": 4416,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1388,31 +1388,31 @@
             "name": "has",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4422,
+              "id": 4406,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4419,
+                  "id": 4403,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "387:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4418,
+                    "id": 4402,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "387:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -1421,10 +1421,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4421,
+                  "id": 4405,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "412:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1433,7 +1433,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4420,
+                    "id": 4404,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "412:7:20",
@@ -1450,15 +1450,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4425,
+              "id": 4409,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4424,
+                  "id": 4408,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4432,
+                  "scope": 4416,
                   "src": "453:4:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1467,7 +1467,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4423,
+                    "id": 4407,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "453:4:20",
@@ -1482,7 +1482,7 @@
               ],
               "src": "452:6:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "374:133:20",
             "stateMutability": "view",
             "superFunction": null,
@@ -1490,7 +1490,7 @@
           },
           {
             "body": {
-              "id": 4446,
+              "id": 4430,
               "nodeType": "Block",
               "src": "587:48:20",
               "statements": [
@@ -1503,24 +1503,24 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4441,
+                            "id": 4425,
                             "name": "wlist",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4434,
+                            "referencedDeclaration": 4418,
                             "src": "610:5:20",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                              "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                               "typeString": "struct whitelist.Whitelist storage pointer"
                             }
                           },
                           {
                             "argumentTypes": null,
-                            "id": 4442,
+                            "id": 4426,
                             "name": "_address",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4436,
+                            "referencedDeclaration": 4420,
                             "src": "617:8:20",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1531,7 +1531,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                              "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                               "typeString": "struct whitelist.Whitelist storage pointer"
                             },
                             {
@@ -1539,18 +1539,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 4440,
+                          "id": 4424,
                           "name": "has",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4432,
+                          "referencedDeclaration": 4416,
                           "src": "606:3:20",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4385_storage_ptr_$_t_address_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_internal_view$_t_struct$_Whitelist_$4369_storage_ptr_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (struct whitelist.Whitelist storage pointer,address) view returns (bool)"
                           }
                         },
-                        "id": 4443,
+                        "id": 4427,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1572,21 +1572,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4439,
+                      "id": 4423,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        4466,
-                        4467
+                        4450,
+                        4451
                       ],
-                      "referencedDeclaration": 4466,
+                      "referencedDeclaration": 4450,
                       "src": "598:7:20",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4444,
+                    "id": 4428,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1600,14 +1600,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4445,
+                  "id": 4429,
                   "nodeType": "ExpressionStatement",
                   "src": "598:29:20"
                 }
               ]
             },
             "documentation": null,
-            "id": 4447,
+            "id": 4431,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1615,31 +1615,31 @@
             "name": "check",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4437,
+              "id": 4421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4434,
+                  "id": 4418,
                   "name": "wlist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4447,
+                  "scope": 4431,
                   "src": "530:23:20",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                    "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                     "typeString": "struct whitelist.Whitelist"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4433,
+                    "id": 4417,
                     "name": "Whitelist",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4385,
+                    "referencedDeclaration": 4369,
                     "src": "530:9:20",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Whitelist_$4385_storage_ptr",
+                      "typeIdentifier": "t_struct$_Whitelist_$4369_storage_ptr",
                       "typeString": "struct whitelist.Whitelist"
                     }
                   },
@@ -1648,10 +1648,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4436,
+                  "id": 4420,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4447,
+                  "scope": 4431,
                   "src": "555:16:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1660,7 +1660,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4435,
+                    "id": 4419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "555:7:20",
@@ -1677,19 +1677,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4438,
+              "id": 4422,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "587:0:20"
             },
-            "scope": 4448,
+            "scope": 4432,
             "src": "515:120:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 4449,
+        "scope": 4433,
         "src": "28:612:20"
       }
     ],
@@ -1701,5 +1701,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-27T04:37:22.709Z"
+  "updatedAt": "2018-06-27T06:56:02.148Z"
 }

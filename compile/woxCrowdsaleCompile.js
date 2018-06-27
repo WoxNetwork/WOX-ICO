@@ -19,6 +19,7 @@ const files = [
     './contracts/Token/ERC223/StandardToken.sol',
     './contracts/Token/ERC223/BurnableToken.sol',
     './contracts/ownership/Ownable.sol',
+    './contracts/ownership/Heritable.sol',
     './contracts/Math/SafeMath.sol',
     './contracts/AddressUtils.sol',
 ]
@@ -30,7 +31,8 @@ files.map(s => {
 });
 
 let output = solc.compile({sources : input}, 1);
-// let abi = output.contracts['./contracts/crowdSale/WOXCrowdsale.sol:WOXCrowdsale'].interface
-// let bytecode = output.contracts['./contracts/crowdSale/WOXCrowdsale.sol:WOXCrowdsale'].bytecode
+// let abi = output.contracts['./contracts/test/WOXCrowdsaleTest.sol:WOXCrowdsaleTest'].interface
+// let bytecode = output.contracts['./contracts/test/WOXCrowdsaleTest.sol:WOXCrowdsaleTest'].bytecode
+// console.log(output.contracts['./contracts/test/WOXCrowdsaleTest.sol:WOXCrowdsaleTest'])
 
 module.exports = output.contracts['./contracts/test/WOXCrowdsaleTest.sol:WOXCrowdsaleTest']

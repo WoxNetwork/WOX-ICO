@@ -4,6 +4,7 @@ import "../Token/ERC223/woxToken.sol";
 import "../Math/SafeMath.sol";
 import "./WhitelistedVC.sol";
 
+
 /**
  * @title BasicCrowdsale
  * @dev BasicCrowdsale is the base contract of managing woxTeoken crowdsale,

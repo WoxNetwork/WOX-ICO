@@ -8,6 +8,7 @@ import "./ReferralCorwdsale.sol";
 import "./tokenReceiver.sol";
 import "./BurnableCrowdsale.sol";
 import "../ownership/Heritable.sol";
+import "./pricing.sol";
 
 /**
  * @title WOXCrowdsale
@@ -20,6 +21,7 @@ contract WOXCrowdsale is
     RefundableCrowdsale,
     ReferralCrowdsale,
     BurnableCrowdsale,
+    pricing,
     tokenReceiver,
     Heritable
 {
@@ -187,7 +189,9 @@ contract WOXCrowdsale is
     function updatePricing(uint256 _usd_eth) public onlyOwner {
         require(_usd_eth > 0);
 
-        USD_PER_ETH = _usd_eth;
+        insertNewEthRate(_usd_eth);
+        // USD_PER_ETH = _usd_eth;
+        USD_PER_ETH = getUpdatedEthRate();
         softcapWei = uint256(3e6).mul(1 ether).div(USD_PER_ETH);
         minVestingWeiPreICO = uint256(50e3).mul(1 ether).div(USD_PER_ETH);
         maxVestingWeiPreICO = uint256(1e6).mul(1 ether).div(USD_PER_ETH); //// ?????
